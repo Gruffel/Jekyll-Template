@@ -1,0 +1,39 @@
+<div class="footer__wrapper">
+  <div class="easterEggs">
+      <div id="ReggieHead"><a href="/HEN/credits/"><span class="visuallyhidden">Credits</span></a></div>
+  </div>
+
+  <div class="max-width__tier-1 footer_grid">
+    <section>
+    	<div class="footer_contact">
+    		<h2>{{site.title}}</h2>
+    		<div itemscope itemtype="https://schema.org/EducationalOrganization">
+    			<div class="address" itemprop="address">
+    				<div itemprop="streetAddress">
+    					<p>{%- if site.address-building != nil -%}{{site.address-building}}{%if site.address-room-number != nil %} {{site.address-room-number}}{%- endif %}{%endif%}{% if site.address-campus-box != nil %}, Campus Box{{ site.address-campus-box}}{%endif%}</p>
+    					<p>{%- if site.address-town != nill -%}<span itemprop="addressLocality">{{site.address-town}}</span>{%- endif%}{% if site.address-state != nil %}, <span itemprop="addressRegion">{{site.address-state}}</span>{%endif%} <span itemprop="postalCode">{% if site.address-postal-code != nil %}{{site.address-postal-code}}-4480{%endif%}</span></p>
+    					<br>
+    					<p>{%- if site.dept-phone != nil -%}{% capture phonenumber %}{{ site.dept-phone }}{% endcapture %}<a href="tel:{{phonenumber | slice: 0,9}}" aria-label="{{phonenumber | slice: 0 }} {{phonenumber | slice: 1 }} {{phonenumber | slice: 2 }}. {{phonenumber | slice: 3 }} {{phonenumber | slice: 4 }} {{phonenumber | slice: 5 }}. {{phonenumber | slice: 6 }} {{phonenumber | slice: 7 }} {{phonenumber | slice: 8 }} {{phonenumber | slice: 9 }}." class="" itemprop="telephone">({{phonenumber | slice: 0,3 }}) {{phonenumber | slice: 3,3 }}-{{phonenumber | slice: 6,4 }}</a>{%- endif %}{%- if site.contact-us-link != nil -%} | <a href="{{site.contact-us-link}}">Contact Us</a>{%- endif %}</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="footer_applyNow">
+    		<h2><a href="{%- if site.apply-link != nil -%}{{site.apply-link}}{%- else -%}https://illinoisstate.edu/apply/{%- endif %}" class="footer_applyNow-button" target="_blank">Apply Now</a></h2>
+    	</div>
+    </section>
+
+    <div class="footer_copyright">
+    	<div id='standards'>
+    		<!--"/include/identity-standards.html-->
+    	</div>
+    	<p><a href="{%- if site.giving-link != nil -%}{{site.giving-link}}{%- else -%}https://giving.illinoisstate.edu/{%- endif %}">Give to the {{site.title}}</a>{%- if site.additional-footer-link-1-link != nil -%} | <a href="{{site.additional-footer-link-1-link}}" target="_blank" rel="noopener">{{site.additional-footer-link-1-text}}</a>{%- endif %}{%- if site.additional-footer-link-2-link != nil -%} | <a href="{{site.additional-footer-link-2-link}}" target="_blank" rel="noopener">{{site.additional-footer-link-2-text}}</a>{%- endif %} &vert; <a id="{{site.edit-link-id}}" href="">Edit Page</a></p>
+    </div>
+
+    <div class="footer_social">
+      {% include structure/social-media.html %}
+    </div>
+  </div>
+</div>
+<script src="https://casit.illinoisstate.edu/cdn/js/cjcmsDev.js" ></script>

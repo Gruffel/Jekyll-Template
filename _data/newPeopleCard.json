@@ -1,0 +1,91 @@
+{
+  "people": [
+    {
+      "name": "",
+      "title": "",
+      "image": "",
+      "displayedPages": [
+        {
+          "contactCards": false,
+          "callToActionCards": false,
+          "emeritus": false,
+          "bios": false,
+          "faceList": false
+        }
+      ],
+      "featureSpecific": [
+        {
+          "contactCards": [
+            {
+              "prefix": "",
+              "suffix": "",
+              "jobTitle": "",
+              "subTitle": "",
+              "phone": "",
+              "email": "",
+              "office": "",
+              "officeDays": "",
+              "officeHours": "",
+              "website": ""
+            }
+          ],
+          "callToActionCards": [
+            {
+              "prefix": "",
+              "suffix": "",
+              "jobTitle": "",
+              "subTitle": "",
+              "advises": "",
+              "email": "",
+              "phone": "",
+              "office": "",
+              "officeDays": "",
+              "officeHours": "",
+              "website": "",
+              "actionLink": "",
+              "virtualLink": ""
+            }
+          ],
+          "emeritus": [
+            {
+              "prefix": "",
+              "suffix": "",
+              "jobTitle": "",
+              "subTitle": "",
+              "email": "",
+              "phone": "",
+              "office": "",
+              "officeDays": "",
+              "officeHours": "",
+              "website": ""
+            }
+          ],
+          "bios": [
+            {
+              "prefix": "",
+              "suffix": "",
+              "jobTitle": "",
+              "subTitle": "",
+              "email": "",
+              "phone": "",
+              "website": ""
+            }
+          ],
+          "faceList": [
+            {
+              "prefix": "",
+              "suffix": "",
+              "jobTitle": "",
+              "subTitle": "",
+              "phone": "",
+              "email": "",
+              "office": "",
+              "officeDays": "",
+              "officeHours": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

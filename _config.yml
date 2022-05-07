@@ -1,0 +1,113 @@
+# A lot of the content here is place holder examples of the content.
+
+# Site Variables
+title: School of Copy Pasta
+
+# address/footer info
+address-campus-box: 4120
+address-building: Some Hall 
+address-room-number: 434
+address-town: Normal
+address-state: IL
+address-postal-code: 61761
+dept-phone: 1111111111
+contact-us-link: /about/contact/
+apply-link: 
+giving-link: 
+additional-footer-link-1-text: 
+additional-footer-link-1-link: 
+additional-footer-link-2-text: 
+additional-footer-link-2-link:
+
+# Search Path:
+search-path: communication.illinoisstate.edu
+
+# 3 digits found in footer, used for department coins pulls
+department-number: 412
+
+# CJ-CMS Linking ID
+edit-link-id: cjcms-edit
+
+#Nav Theme Color
+nav_theme_color: hsl(0, 100%, 30%)
+
+
+# Feed Links:
+feeds-news__link: 
+feeds-events__link: 
+
+# Social media
+social-media:
+  - company-name: Facebook
+    title: School of Copy Pasta
+    url: https://www.facebook.com/ISUSOC
+  - company-name: Twitter
+    title: School of Copy Pasta
+    url: https://twitter.com/ISUSOC
+  - company-name: LinkedIn
+    title: School of Copy Pasta
+    url: https://www.linkedin.com/school/illinois-state-university/mycompany/
+  - company-name: YouTube
+    title: School of Copy Pasta
+    url: https://www.youtube.com/channel/UC8u4r-TgDxvRi7YhR26Od-Q
+
+
+# Type=> /launch, or NONE (if site is a subsite insert subsite name)
+baseurl:
+
+# Home Page Variables
+home_description:
+meta_image: https://illinois-state-assets.imgix.net/casit/cdn/Quad/2020/summer/19_31817-1.jpg
+
+
+# Make A Gift Content
+make-a-gift_image: https://illinois-state-assets.imgix.net/casit/dev-folder/pixabay/noodles.jpg
+make-a-gift_title: Support Us
+make-a-gift_body-copy: You can help the School of Coffee.
+make-a-gift_link-url: https://giving.illinoisstate.edu/
+make-a-gift_link-text: Make A Gift
+
+# Site Wide Build & Settings DO THESE IMPACT THE NAV??
+collections:
+  home:
+    output: true
+
+  core:
+    output: true
+
+  modularity:
+    output: true
+
+  features:
+    output: true
+
+  HEN:
+    output: true
+  
+  faculty:
+    output: true
+  
+  search:
+    output: true
+
+
+# Tells Jekyll to compile and build SASS into CSS
+sass:
+  style: compressed
+
+# Turns URLs into the pretty format example: /home.html becomes /home/ with an unseen index.html
+permalink: pretty
+
+
+include: [".html"]
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - node_modules
+    - vendor/bundle/
+    - vendor/cache/
+    - vendor/gems/
+    - vendor/ruby/

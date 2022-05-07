@@ -1,0 +1,27 @@
+---
+---
+
+.twoColumn-reactive__container--marginCleaner+p, .twoColumn-reactive__container--marginCleaner+h2, .twoColumn-reactive__container--marginCleaner+h3, .twoColumn-reactive__container--marginCleaner+h4, .twoColumn-reactive__container--marginCleaner+h5, .twoColumn-reactive__container--marginCleaner+h6, .twoColumn-reactive__container--marginCleaner+ul, .twoColumn-reactive__container--marginCleaner+li, .twoColumn-reactive__container--marginCleaner+ol, .twoColumn-reactive__container--marginCleaner+ table {
+    margin: 0 auto;
+    clear: both;
+}
+
+.twoColumn-reactive__container{
+  padding:.5rem;
+}
+.wrap{
+  float:none;
+}
+
+@media only screen and (min-width:768px) {
+  .twoColumn-reactive__container{
+    column-count: 2;
+    column-gap: 60px;
+    padding:2rem;
+  }
+  .wrap{
+    float:left;
+    margin-right:20px;
+    margin-bottom:5px;
+  }
+}

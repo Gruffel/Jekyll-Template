@@ -1,0 +1,53 @@
+<meta name="google-site-verification" content="sIVf_cGAVsct4PoeepB-ev_eFu-N2SlxE354b6vW9Bg"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="{{site.nav_theme_color}}"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+{%- if page.url == "/" -%}
+<!-- Make sure meta title does not cause any issue with html tag Title before using the meta title! -->
+<meta property="title" content="{{ site.title }} | Illinois State University">
+<meta property="og:title" content="{{ site.title }} | Illinois State University">
+<meta name="twitter:title" content="{{ site.title }} | Illinois State University">
+{%- elsif page.editable-meta_description-switch == true -%}
+<meta property="title" content="{{ page.title }} | {{ site.title }} | Illinois State University">
+<meta property="og:title" content="{{ page.title }} | {{ site.title }} | Illinois State University">
+<meta name="twitter:title" content="{{ page.title }} | {{ site.title }} | Illinois State University">
+{%- endif %}
+
+
+{%- if page.url == "/" -%}
+
+<meta name ="image" content="{{ site.meta_image }}?w=450&ar=3:2&fit=crop&q=75&format=auto&exp=-2&sat=5" />
+<meta property="og:image" content="{{ site.meta_image }}?w=450&ar=3:2&fit=crop&q=75&format=auto&exp=-2&sat=5" />
+<meta name="twitter:image" content="{{ site.meta_image }}?w=450&ar=3:2&fit=crop&q=75&format=auto&exp=-2&sat=5" />
+
+{%- elsif page.editable-meta_image-switch == true -%}
+<meta name ="image" content="{{ page.editable-meta_image }}?w=450&ar=3:2&fit=crop&q=75&format=auto&exp=-2&sat=5" />
+<meta property="og:image" content="{{ page.editable-meta_image }}?w=450&ar=3:2&fit=crop&q=75&format=auto&exp=-2&sat=5" />
+<meta name="twitter:image" content="{{ page.editable-meta_image }}?w=450&ar=3:2&fit=crop&q=75&format=auto&exp=-2&sat=5" />
+{%- endif -%}
+
+
+
+{%- if page.url == "/" -%}
+
+<meta name="description" content="{{ site.meta_description }}"/>
+<meta property="og:description" content="{{ site.meta_description }}">
+<meta name="twitter:description" content="{{ site.meta_description }}">
+<meta name="twitter:card" content="summary_large_image">
+
+{%- elsif page.editable-meta_description-switch == true  -%}
+<meta name="description" content="{{ page.meta_description }}"/>
+<meta property="og:description" content="{{ page.meta_description }}">
+<meta name="twitter:description" content="{{ page.meta_description }}">
+<meta name="twitter:card" content="summary_large_image">
+{%- endif %}
+
+{%- if page.url == "/" -%}
+<meta property="url" content="{{page.url}}">
+<meta property="og:url" content="{{page.url}}">
+{%- elsif page.editable-meta_description-switch == true -%}
+<meta property="url" content="{{page.url}}">
+<meta property="og:url" content="{{page.url}}">
+{%- endif %}

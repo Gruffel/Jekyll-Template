@@ -1,0 +1,258 @@
+---
+---
+/********************************/
+/*      SEARCH STRUTCTURE SYLTINZATION */
+/********************************/
+div.searchBar{
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+section.searchsideBar{
+  width:100%;
+  padding-bottom: 50px;
+}
+
+div#results{
+  width: clamp(100px,95vw,1080px);
+  margin-right: 5%;
+  margin-bottom: 30px;
+}
+
+.printOptions{
+  min-width: 130px;
+}
+
+input[type="text"].researchSearch{
+  margin-top: 20px;
+  border-radius: 2px;
+  width: 50%;
+  color: black;
+  font-size: 1.5em;
+  padding: 10px;
+  border: 2px solid #222;
+}
+
+
+li.researchDataPaginationLink {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.15em;
+    margin: 0 10px 5px 10px;
+}
+
+li.tagListItem {
+  list-style: none;
+}
+
+li.tagListItem button{
+  padding: 2px;
+  font-size: 1em;
+  margin: 5px;
+}
+
+li.tagListItem button:hover{
+  padding: 2px;
+  font-size: 1em;
+  margin: 5px;
+}
+
+/********************************/
+/*      ARTICLE STYLIZATION */
+/********************************/
+article{
+  background-color: #f9f9f9;
+  box-shadow: 0.5px 0.5px 3px 0.5px #ccc;
+  padding: 15px;
+  margin-bottom: 12px;
+}
+
+p.contentType {
+  margin-top: 0;
+  margin-left: auto;
+  width: fit-content;
+  font-weight: 600;
+  color: #555555;
+}
+p.researchTags {
+  margin: 10px 0 0 0;
+  font-size: 15px;
+}
+p{
+  margin: 0;
+}
+
+article h2 a {
+  font-size: .7em;
+}
+.search-options-wrapper{
+  display:grid;
+  grid: auto / 1fr;
+  width: 100%;
+}
+.filterOptions__options-wrapper{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+#filterOptions__options-type, #filterOptions__options-tag, #filterOptions__options-date{
+  padding: 0 10px 10px 10px;
+}
+
+.research__utility-button-wrapper{
+  display:block;
+width:100%;
+text-align:center;
+margin-bottom: 25px;
+}
+
+h1{
+  text-align: center;
+  font-size: clamp(1.75rem, 3vw ,2.75rem) ;
+  margin-bottom: 35px!important;
+}
+
+article{
+  box-shadow: 1px 1px 4px #ddd !important;
+}
+.publications__search-bar{
+  font-size:1rem;
+}
+.filterOptions h4{
+  font-size:1.25rem;
+}
+.filterOptions h3{
+  font-size:1.5rem;
+}
+.sortOptions h3 {
+  font-size: 1.5rem;
+}
+.search-submit{
+  margin: 0!important;
+  padding: .8rem 1.25rem!important;
+  padding: 10px 15px!important;
+  font-size: 1.25rem!important;
+}
+button.btn.btn__red-white.btn__small {
+    color: #990000;
+}
+button.btn.btn__red-white.btn__small:focus ,button.btn.btn__red-white.btn__small:hover {
+    color: #ffffff;
+}
+
+fieldset{
+  border:unset;
+}
+input{
+padding: 10px 15px;
+font-size: 1.25rem;
+}
+select {
+  font-size: 1.25rem;
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.filterOptions input{
+padding: 5px 10px;
+font-size: 1rem;
+}
+.filterOptions select {
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+select#typeList {
+  width: clamp(100px, 20vw , 350px);
+}
+input#dateFilter{
+width: clamp(55px, 10vw, 100px);
+}
+input[type="text"].researchSearch {
+  width: clamp(155px,64vw,615px);
+  color: black;
+  font-size: 1.25rem;
+  padding: 10px 15px;
+  border: 2px solid #222;
+  margin:0;
+}
+.publications__search{
+display: inline-flex;
+width:100%;
+justify-content: center;
+flex-wrap: wrap;
+}
+.publications__search-bar-wrapper{
+margin-bottom: 10px;
+display:inline-flex;
+}
+button.researchSubmit.btn.btn__red-white.btn__small.apply-filter {
+  margin: 0;
+}
+.filterOptions__buttons{
+  width: 50%;
+  text-align: center;
+  margin: 10px auto;
+}
+.filterOptions__buttons button{
+width:clamp(100px,33vw,500px);
+}
+#desktop-reset{
+  display:none;
+}
+p.titleWrapper {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width:922px) {
+  .search-options-wrapper{
+    grid: auto / 1fr 4fr;
+  }
+  select#typeList {
+    width: clamp(100px, 15vw , 350px);
+  }
+}
+@media only screen and (min-width:1200px) {
+  .search-options-wrapper{
+    display:block!important;
+  }
+section.searchsideBar{
+  display:block;
+  border-right: 1px solid black;
+  float: left;
+  width: clamp(300px, 25%, 360px);
+}
+.filterOptions__options-wrapper{
+  display:block;
+}
+div#results{
+  float: right;
+  width: 65%;
+
+}
+
+
+#filterOptions__options-type, #filterOptions__options-tag, #filterOptions__options-date{
+  padding: 0;
+}
+
+.filterOptions{
+  margin-top:20px;
+}
+.research__utility-button-wrapper{
+  text-align:unset;
+  margin-bottom: 0;
+}
+.filterOptions__buttons{
+text-align: unset;
+  width: unset;
+}
+.filterOptions__buttons button {
+  width: unset;
+}
+#desktop-reset{
+  display:unset;
+}
+}

@@ -1,0 +1,30 @@
+{% assign buildPageSnippetArray = page.snippets | where_exp: 'snippets', 'snippets.positioning < 0' | sort: 'positioning' %}
+{%comment%} 
+The line above grabs data from the page that is building. 
+It collects the data of snippets that have a positioning number less than 0 in the 'snippets' front matter.
+It then orders it numerically (incase the frontmatter positioning numbers are out of order).
+All of this is building it into an array that we can access.
+{%endcomment%}
+{% assign snippetNegativeNumberI = buildPageSnippetArray.size | times: -1 | minus: 1 %}{%comment%} It starts/resets the loop with var at 0 {%endcomment%}
+{%- for buildPageSnippetData in buildPageSnippetArray -%}
+    {% assign snippetNegativeNumberI = snippetNegativeNumberI | minus: 1 %} {%comment%} KEEP THIS LINE -- It starts/maintains the loop for each snippet {%endcomment%}
+    {%- if buildPageSnippetData.positioning == snippetNegativeNumberI -%} {%comment%} Here we match the build cycle of each snippet with its snippet positioning, creating the ridgid structe to build in.{%endcomment%}
+{%comment%} ****** Button Types ****** {%endcomment%}
+    {%comment%} Added {%endcomment%}
+        {%- if buildPageSnippetData.sub-navs != nil -%}{% include snippets/buttonTypes/sub-nav/sub-nav.html %}{%- endif %}
+    {%comment%} Yet to be tested {%endcomment%}
+    {%comment%} Yet to be added {%endcomment%}
+{%comment%} ****** Content Blocks ****** {%endcomment%}
+    {%comment%} Added {%endcomment%}
+        {%- if buildPageSnippetData.aside != nil -%}{% include snippets/contentBlocks/aside/aside.html %}{%- endif %}
+    {%comment%} Yet to be tested {%endcomment%}
+    {%comment%} Yet to be added {%endcomment%}
+{%comment%} ****** Feeds and Pulls ****** {%endcomment%}
+    {%comment%} Added {%endcomment%}
+    {%comment%} Yet to be tested {%endcomment%}
+        {%- if buildPageSnippetData.search != nil -%}{% include snippets/feeds-and-pulls/search/search.html %}{%- endif %}
+    {%comment%} Yet to be added {%endcomment%}
+        {%- if buildPageSnippetData.search != nil -%}{% include snippets/feeds-and-pulls/search/search.html %}{%- endif %}
+        {%- if buildPageSnippetData.eventsFeed != nil -%}{% include snippets/feeds-and-pulls/news-and-events/events.html %}{%- endif %} 
+    {%- endif %}
+{%- endfor -%}

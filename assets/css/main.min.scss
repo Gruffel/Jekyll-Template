@@ -1,0 +1,1551 @@
+---
+---
+
+
+{% comment %}
+/*-----  Table Content  -----*/
+/*---------------------------------------------
+'crtl f' title to find this section of the file
+
+- Site styles
+- Accessibility
+- Fonts
+- Icons
+- Nav styles
+- Header styles
+- Footer styles
+- Background styles
+- Media styles
+- Image Styles
+- Video Styles
+-
+----------------------------------------------*/
+{% endcomment %}
+
+{% comment %}
+/*-------------------------------------------*/
+/* -- Site styles -- */
+/*-------------------------------------------*/
+{% endcomment %}
+
+
+::selection {
+  // background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  // background: #ffb7b7; /* Gecko Browsers */
+}
+#f-positive-wrapper{
+  clear:both;
+}
+
+
+{% comment %}
+
+/*-------------------------------------------*/
+/* -- Accessibility -- */
+/*-------------------------------------------*/
+
+{% endcomment %}
+
+a#skiplink, a#skiplink:hover, a#skiplink:visited{
+	position:absolute;
+	top: -500px;
+	height: 1px;
+	width: 1px;
+	overflow:hidden;
+	color: white;
+  border-bottom-right-radius: 8px;
+  background: transparent;
+  -webkit-transition: top 1s ease-out, background 1s linear;
+  transition: top 1s ease-out, background 1s linear;
+  z-index: 100;
+}
+a#skiplink:active, a#skiplink:focus{
+	position:absolute;
+	font-size: 1.5rem;
+	padding:20px;
+	top: 30px;
+	height: auto;
+	width:auto;
+	background: linear-gradient(45deg, black, #222);
+	// background: #BF1722;
+	// padding-right: 10px;
+	// padding-left: 10px;
+    // outline: 0;
+	webkit-transition: top .1s ease-in, background .5s linear;
+    transition: top .1s ease-in, background .5s linear;
+
+}
+{% comment %}
+/*-------------------------------------------*/
+/* -- Fonts -- */
+/*-------------------------------------------*/
+{% endcomment %}
+
+@font-face {
+  font-family: 'ISURegular';
+  src: url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Regular-webfont.eot');
+  src: url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Regular-webfont.woff') format('woff'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ISUSemibold';
+  src: url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Semibold-webfont.eot');
+  src: url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Semibold-webfont.ttf') format('truetype'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ISUBold';
+  src: url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Bold-webfont.eot');
+  src: url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Bold-webfont.woff') format('woff'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ISUItalic';
+  src: url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Italic-webfont.eot');
+  src: url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Italic-webfont.woff') format('woff'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Italic-webfont.ttf') format('truetype'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ISUSemiboldItalic';
+  src: url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-SemiboldItalic-webfont.eot');
+  src: url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ISUBoldItalic';
+  src: url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-BoldItalic-webfont.eot');
+  src: url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-BoldItalic-webfont.woff') format('woff'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'), url('https://iguides.illinoisstate.edu/cdn/fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face { font-family: "ISULogoSerif"; src: url(//cdn.illinoisstate.edu/fonts/latin-modern/sc-regular.eot); src: url(//cdn.illinoisstate.edu/fonts/latin-modern/sc-regular.eot?#iefix) format('eot'), url(//cdn.illinoisstate.edu/fonts/latin-modern/sc-regular.woff) format('woff'), url(//cdn.illinoisstate.edu/fonts/latin-modern/sc-regular.ttf) format('truetype'), url(//cdn.illinoisstate.edu/fonts/latin-modern/sc-regular.svg#LatinModern) format('svg'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: "ISUSerifItalic"; src: url(//cdn.illinoisstate.edu/fonts/pt-serif/italic.eot); src: url(//cdn.illinoisstate.edu/fonts/pt-serif/italic.eot?#iefix) format('eot'), url(//cdn.illinoisstate.edu/fonts/pt-serif/italic.woff) format('woff'), url(//cdn.illinoisstate.edu/fonts/pt-serif/italic.ttf) format('truetype'), url(//cdn.illinoisstate.edu/fonts/pt-serif/italic.svg#LatinModern) format('svg'); font-weight: normal; font-style: normal; }
+
+.isu-logo .isu-logo-wordmark-wrapper .isu-logo-wordmark {
+  color: #cc0000;
+  font-family: 'ISULogoSerif';
+  font-size: 1.5rem;
+  line-height: 1;
+  font-variant: small-caps;
+}
+
+.isu-logo .isu-logo-wordmark-wrapper .isu-logo-subscript {
+  color: #cc0000;
+  // font-family: 'ISULogoSerif';
+	font-family: 'ISUSerifItalic';
+  font-size: .9rem;
+  line-height: 1.75;
+  font-style: italic;
+}
+{% comment %}
+/*-------------------------------------------*/
+/* -- Icons -- */
+/*-------------------------------------------*/
+{% endcomment %}
+
+@font-face {
+  font-family: "isu-icons";
+  src: url(//cdn.illinoisstate.edu/fonts/icons/isu-icons-new.eot);
+  src: url(//cdn.illinoisstate.edu/fonts/icons/isu-icons-new.eot?#iefix) format('eot'), url(//cdn.illinoisstate.edu/fonts/icons/isu-icons-new.woff) format('woff'), url(//cdn.illinoisstate.edu/fonts/icons/isu-icons-new.ttf) format('truetype'), url(//cdn.illinoisstate.edu/fonts/icons/isu-icons-new.svg#icomoon) format('svg');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+.icon:before, .icon:after {
+  font-family: 'isu-icons';
+  font-display: swap;
+  padding: 0px 5px;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+{% comment %}
+/*-------------------------------------------*/
+/* -- Icons - Directory -- */
+/*-------------------------------------------*/
+
+/* !IMPORTANT -- Do not delete or remove.
+Icon Styles - Jekyll 2.0 build
+
+Source: AT - WEB
+URL: https://docs.iwss.ilstu.edu/design/icons/
+
+*/
+/*
+last Updated: 1-21-20
+
+lIST OF CONTENTS
+Use a search to quickly navigate to desired region of file
+
+--> Font-face
+--> UI Icons
+--> Feedback & Filetype
+--> Communication
+--> Academic
+--> News & Events
+--> Place Icons
+--> Transportation
+--> Sustainability
+--> Financial
+--> Miscellaneous
+--> External Brand
+*/
+{% endcomment %}
+
+{% comment %}/*--- UI Icons e000-e199 --- */{% endcomment %}
+.icon__arrow-up--before:before {content: "\e000";}
+.icon__arrow-right--before:before {content: "\e001";}
+.icon__arrow-down--before:before {content: "\e002";}
+.icon__arrow-left--before:before {content: "\e003";}
+.icon__chevron-right--before:before {content: "\e005";}
+.icon__chevron-left--before:before {content: "\e007";}
+.icon__home--before:before {content: "\e008";}
+.icon__menu--before:before {content: "\e009";}
+.icon__search--before:before {content: "\e010";}
+.icon__arrow--before:before {content: "\e011";}
+.icon__external-link--before:before {content: "\e012";}
+.icon__lock--before:before {content: "\e013";}
+.icon__unlock--before:before {content: "\e014";}
+.icon__expand--before:before {content: "\e015";}
+.icon__collapse--before:before {content: "\e016";}
+.icon__upload--before:before {content: "\e017";}
+.icon__download--before:before {content: "\e018";}
+.icon__print--before:before {content: "\e019";}
+.icon__play--before:before {content: "\e020";}
+.icon__refresh--before:before {content: "\e021";}
+.icon__settings--before:before {content: "\e022";}
+.icon__cog--before:before {content: "\e023";}
+.icon__code--before:before {content: "\e024";}
+.icon__calendar-month--before:before {content: "\e025";}
+.icon__calendar-day--before:before {content: "\e026";}
+.icon__clock--before:before {content: "\e027";}
+.icon__copyright--before:before {content: "\e028";}
+.icon__trademark--before:before {content: "\e029";}
+.icon__feed--before:before {content: "\e030";}
+.icon__form--before:before {content: "\e031";}
+.icon__link--before:before {content: "\e032";}
+.icon__at--before:before {content: "\e033";}
+.icon__show--before:before {content: "\e034";}
+.icon__hide--before:before {content: "\e035";}
+.icon__pause--before:before {content: "\e036";}
+
+{% comment %}
+/* Feedback & Filetype Icons e200-e299 */
+/*--- Feedback  e200-e249 --- */
+{% endcomment %}
+.icon__help-fill--before:before {content: "\e200";}
+.icon__help-stroke--before:before {content: "\e201";}
+.icon__info-fill--before:before {content: "\e202";}
+.icon__info-stroke--before:before {content: "\e203";}
+.icon__success-fill--before:before {content: "\e204";}
+.icon__success-stroke--before:before {content: "\e205";}
+.icon__warning-fill--before:before {content: "\e206";}
+.icon__warning-stroke--before:before {content: "\e207";}
+.icon__danger-fill--before:before {content: "\e208";}
+.icon__danger-stroke--before:before {content: "\e209";}
+
+
+{% comment %}/* --- Filetype  e249-e299  ---  */{% endcomment %}
+.icon__file-doc--before:before {content: "\e250";}
+.icon__file-word--before:before {content: "\e251";}
+.icon__file-excel--before:before {content: "\e252";}
+.icon__file-powerpoint--before:before {content: "\e253";}
+.icon__file-pdf--before:before {content: "\e254";}
+.icon__file-zip--before:before {content: "\e255";}
+.icon__file-css--before:before {content: "\e256";}
+
+
+{% comment %}/* --- Communication Icons e300 - e399 --- */{% endcomment %}
+.icon__users--before:before {content: "\e300";}
+.icon__user-neutral--before:before {content: "\e301";}
+.icon__user-male--before:before {content: "\e302";}
+.icon__user-female--before:before {content: "\e303";}
+.icon__user-add--before:before {content: "\e304";}
+.icon__user-card--before:before {content: "\e305";}
+.icon__wheelchair--before:before {content: "\e306";}
+.icon__comment--before:before {content: "\e307";}
+.icon__comments--before:before {content: "\e308";}
+.icon__share-fill--before:before {content: "\e309";}
+.icon__share-stroke--before:before {content: "\e310";}
+.icon__email--before:before {content: "\e311";}
+.icon__phone--before:before {content: "\e312";}
+.icon__wifi--before:before {content: "\e313";}
+
+{% comment %}/* --- Academic e400 - e499 --- */{% endcomment %}
+.icon__award--before:before {content: "\e400";}
+.icon__trophy--before:before {content: "\e401";}
+.icon__bookmark--before:before {content: "\e402";}
+.icon__bookmarks--before:before {content: "\e403";}
+.icon__book--before:before {content: "\e404";}
+.icon__pencil--before:before {content: "\e405";}
+.icon__grad-hat--before:before {content: "\e406";}
+.icon__grad--before:before {content: "\e407";}
+.icon__scholarship--before:before {content: "\e408";}
+.icon__bell--before:before {content: "\e409";}
+.icon__microscope--before:before {content: "\e410";}
+.icon__beaker--before:before {content: "\e411";}
+.icon__camera--before:before {content: "\e412";}
+.icon__music--before:before {content: "\e413";}
+.icon__drama--before:before {content: "\e414";}
+
+{% comment %}/* --- News & Events Icons e500 - e599 --- */{% endcomment %}
+.icon__newspaper--before:before {content: "\e500";}
+.icon__microphone--before:before {content: "\e501";}
+.icon__bullhorn--before:before {content: "\e502";}
+.icon__ticket--before:before {content: "\e503";}
+
+{% comment %}/* --- Place Icons Icons e600 - e699 --- */{% endcomment %}
+.icon__globe--before:before {content: "\e600";}
+.icon__location--before:before {content: "\e601";}
+.icon__location-add--before:before {content: "\e602";}
+.icon__direction-fill--before:before {content: "\e603";}
+.icon__direction-stroke--before:before {content: "\e604";}
+.icon__building--before:before {content: "\e605";}
+.icon__dorm--before:before {content: "\e606";}
+.icon__apartment--before:before {content: "\e607";}
+.icon__key--before:before {content: "\e608";}
+.icon__keys--before:before {content: "\e609";}
+.icon__food--before:before {content: "\e610";}
+.icon__utensils--before:before {content: "\e611";}
+
+{% comment %}/* --- Transportation Icons e700 - e799 --- */{% endcomment %}
+.icon__walk--before:before {content: "\e700";}
+.icon__bicycle--before:before {content: "\e701";}
+.icon__car--before:before {content: "\e702";}
+.icon__bus--before:before {content: "\e703";}
+.icon__train--before:before {content: "\e704";}
+.icon__airplane--before:before {content: "\e705";}
+.icon__parking--before:before {content: "\e706";}
+
+{% comment %}/* --- Sustainability Icons e800 - e899 --- */{% endcomment %}
+.icon__recycle--before:before {content: "\e800";}
+.icon__sun--before:before {content: "\e801";}
+.icon__snowflake--before:before {content: "\e802";}
+.icon__tree--before:before {content: "\e803";}
+.icon__leaf--before:before {content: "\e804";}
+.icon__tulip--before:before {content: "\e805";}
+.icon__flower--before:before {content: "\e806";}
+
+{% comment %}
+/* Financial Icons e900 - e999 */
+/* --- commerce Icons e900 - e949 --- */
+{% endcomment %}
+.icon__money--before:before {content: "\e900";}
+.icon__money-usd--before:before {content: "\e901";}
+.icon__savings--before:before {content: "\e902";}
+.icon__donate--before:before {content: "\e903";}
+.icon__calculator--before:before {content: "\e904";}
+.icon__shopping-cart--before:before {content: "\e905";}
+
+{% comment %}/* --- Credit Cards Icons e950 - e974 --- */{% endcomment %}
+.icon__credit-card--before:before {content: "\e950";}
+.icon__cc-visa--before:before {content: "\e951";}
+.icon__cc-mastercard--before:before {content: "\e952";}
+.icon__cc-discover--before:before {content: "\e953";}
+.icon__cc-amex--before:before {content: "\e954";}
+
+
+{% comment %}/* --- Charts Icons e975 - e999 --- */{% endcomment %}
+.icon__line-chart--before:before {content: "\e975";}
+.icon__line-chart-x--before:before {content: "\e976";}
+.icon__bar-chart--before:before {content: "\e977";}
+.icon__bar-chart-x--before:before {content: "\e978";}
+.icon__pie-chart--before:before {content: "\e979";}
+
+
+{% comment %}/* --- Miscellaneous Icons eA00 - eA99 --- */{% endcomment %}
+.icon__reggie-head--before:before {content: "\eA00";}
+.icon__asterisk--before:before {content: "\eA01";}
+.icon__quote--before:before {content: "\eA02";}
+.icon__checklist--before:before {content: "\eA03";}
+.icon__lightbulb--before:before {content: "\eA04";}
+.icon__flag--before:before {content: "\eA05";}
+.icon__heart-fill--before:before {content: "\eA06";}
+.icon__heart-stroke--before:before {content: "\eA07";}
+.icon__star-fill--before:before {content: "\eA08";}
+.icon__star-stroke--before:before {content: "\eA09";}
+
+
+{% comment %}/* -- External Brand Icons eB00 - eB99 -- */{% endcomment %}
+.icon__facebook--before:before {content: "\eB00";}
+.icon__twitter--before:before {content: "\eB01";}
+.icon__instagram--before:before {content: "\eB02";}
+.icon__snapchat--before:before {content: "\eB03";}
+.icon__linkedin--before:before {content: "\eB04";}
+.icon__flickr--before:before {content: "\eB05";}
+.icon__pinterest--before:before {content: "\eB06";}
+.icon__youtube--before:before {content: "\eB07";}
+.icon__vimeo--before:before {content: "\eB08";}
+.icon__soundcloud--before:before {content: "\eB09";}
+.icon__wordpress--before:before {content: "\eB10";}
+.icon__tumblr--before:before {content: "\eB11";}
+.icon__messenger--before:before {content: "\eB12";}
+.icon__spotify--before:before {content: "\eB13";}
+
+{% comment %}/* GENERAL STYLES UP TO 480px */{% endcomment %}
+h1,h2, h3, h4, h5, h6 {
+    font-family: "ISUSemibold", "Myriad Pro", Helvetica, sans-serif;
+    clear:left; /*Image Text Wrap DeBug*/
+}
+p {
+    font-family: "ISURegular", Helvetica, Arial, sans-serif;
+}
+a {
+    color: #cc0000;
+    // text-decoration: none;
+}
+a:hover, a:focus {
+    color: #900;
+    text-decoration: underline;
+}
+
+{% comment %}
+/*
+Thsese styles add file icons to appropriate file extensions that are linked.
+*/
+{% endcomment %}
+a[href$=".pdf"]:after{
+	font-family: 'isu-icons';
+	font-display: swap;
+	padding: 0px 5px;
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	margin-left:5px;
+	content: "\e254";
+}
+a[href$=".doc"]:after{
+	font-family: 'isu-icons';
+	font-display: swap;
+	padding: 0px 5px;
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	margin-left:5px;
+	content: "\e251";
+}
+a[href$=".docx"]:after{
+	font-family: 'isu-icons';
+	font-display: swap;
+	padding: 0px 5px;
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	margin-left:5px;
+	content: "\e251";
+}
+a[href$=".xls"]:after{
+	font-family: 'isu-icons';
+	font-display: swap;
+	padding: 0px 5px;
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	margin-left:5px;
+	content: "\e252";
+}
+ a[href$=".xlsx"]:after{
+	font-family: 'isu-icons';
+	font-display: swap;
+	padding: 0px 5px;
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	margin-left:5px;
+	content: "\e252";
+}
+  a[href$=".zip"]:after{
+	font-family: 'isu-icons';
+	font-display: swap;
+	padding: 0px 5px;
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	margin-left:5px;
+	content: "\e255";
+ }
+a[href$=".css"]:after{
+	font-family: 'isu-icons';
+	font-display: swap;
+	padding: 0px 5px;
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	margin-left:5px;
+	content: "\e256";
+ }
+    a[href$=".pptx"]:after{
+	font-family: 'isu-icons';
+	font-display: swap;
+	padding: 0px 5px;
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	margin-left:5px;
+	content: "\e253";
+ }
+a[href$=".ppt"]:after{
+	font-family: 'isu-icons';
+	font-display: swap;
+	padding: 0px 5px;
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	margin-left:5px;
+	content: "\e253";
+ }
+ a[href*="mailto:"]:after{
+   	font-family: 'isu-icons';
+	font-display: swap;
+	padding: 0px 5px;
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	margin-left:5px;
+	content: "\e311";
+ }
+
+{% comment %}
+/*-------------------------------------------*/
+/* -- Nav styles -- */
+/*-------------------------------------------*/
+{% endcomment %}
+  button#hamburgerMenu, button#hamburgerMenu:active{
+    padding: .8rem;
+    display: block;
+    border: 0;
+    background-color: inherit;
+  }
+{% comment %}/*-- the divs that create the hamburger menu in mobile --*/{% endcomment %}
+  .hamburgerBar1, .hamburgerBar2, .hamburgerBar3 {
+    width: 45px;
+    height: 7px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+
+
+  .hamburgerAnimation .hamburgerBar1 {
+    -webkit-transform: rotate(-45deg) translate(-11px, 6px);
+    transform: rotate(-45deg) translate(-11px, 6px);
+  }
+
+  .hamburgerAnimation .hamburgerBar2 {opacity: 0;}
+
+  .hamburgerAnimation .hamburgerBar3 {
+    -webkit-transform: rotate(45deg) translate(-11px, -8px);
+    transform: rotate(45deg) translate(-11px, -8px);
+  }
+
+nav{
+  background:linear-gradient(90deg, #cc0000,#990000);
+}
+
+nav ul{
+  padding:0;
+}
+
+  ul.topNavClosed{
+    display: none;
+  }
+
+ .topNavOpen{
+ }
+
+ li.mobileNavItem a, li.mobileNavItem button{
+   display: block;
+   text-align: left;
+   padding: .75em 1.2em;
+   width: 100%;
+   height:100%;
+   color: #fff;
+   text-decoration: none;
+   letter-spacing: 2px;
+   font-variant-caps: all-small-caps;
+   font-size: 1.4rem;
+   font-family: ISUSemiBold;
+   background-color: inherit;
+   border:0;
+   border-bottom: 1px solid rgba(250,250,250,.2)
+ }
+
+ li.mobileNavItem a:hover, li.mobileNavItem a:active, li.mobileNavItem button:hover, li.mobileNavItem button:active {
+   background-color: #fff;
+   color: #900;
+   cursor: pointer;
+   border-bottom:1px solid #900;
+ }
+
+
+  nav a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+  }
+  nav a:hover, nav a:focus{
+    text-decoration: none;
+    color: #fff;
+  }
+  .top-navigation:hover .navMenu, .top-navigation:focus-within .navMenu, .top-navigation:focus .navMenu{
+    display: block;
+  }
+
+  .top-navigation .navMenu{
+    display: none;
+  }
+
+  li.top-navigation, li.navSection, li.navLink{
+    list-style: none;
+  }
+
+  ul.top-navigation, ul.navSection, ul.navLink{
+    width: 100%;
+  }
+  li.top-navigation{
+    display: inline-block;
+  }
+  li.top-navigation:hover, li.top-navigation:active, li.top-navigation:focus, li.top-navigation:focus-within{
+    background-color: black;
+    cursor: default;
+  }
+	a.navSectionLink:hover, a.navSectionLink:active, a.navSectionLink:focus, a.navSectionLink:focus-within{
+    color: #fff;
+		background: linear-gradient(90deg, #cc0000, #cc0000, transparent);
+  }
+	.navImage a.navSectionHeading:hover{
+	    background:#cc0000;
+	  }
+
+  .top-navigation.activeNav{
+    background-color: black;
+  }
+  .max-width__tier-1 .subMenu {
+    margin: 10px auto;
+  }
+  .subMenu{
+    z-index: 2;
+    display: block;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.88);
+    position: absolute;
+		margin-top:-10px;
+    left:0;
+    right:0;
+    backdrop-filter: blur(6px);
+    height: fit-content;
+  }
+  img.navSection{
+    display: block;
+    width: 100%;
+		height: auto;
+		max-width: 440px;
+  }
+  li.navSection{
+    display: inline-block;
+		break-inside: avoid;
+    width: 100%;
+    padding: .6rem 0rem 0rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 1.1em;
+  }
+  a.navSectionHeading{
+    display: block;
+    padding: .4em .5em;
+    font-size: .85em;
+  }
+
+  li.navSection.navImage{
+      padding: 0;
+    }
+
+    li.navLink a{
+       text-decoration: none;
+       color: #fff;
+       text-transform: none;
+       letter-spacing: 0;
+       font-size:.7em;
+       padding: .4em 1em .4em 1em;
+       display:block;
+    }
+
+
+{% comment %}/* Tablet-portrait (and larger) */{% endcomment %}
+@media only screen and (min-width:768px) {
+nav{
+  background: #c00
+}
+nav a{
+    font-size: .8rem;
+  }
+  ul.navMenu{
+      text-align: left;
+      padding: 10px;
+    }
+  li.top-navigation{
+      font-size: 1em;
+      transition: .75s;
+    }
+  li.top-navigation a.top-navigation{
+      display: block;
+      padding: .8em .5em ;
+    }
+  li.navSection{
+      font-size: 1em;
+      padding: .5rem 1rem 0rem;
+    }
+	.subMenu{
+			margin-top:-6px;
+		}
+  li.navLink a{
+      font-size:.7em;
+   }
+
+ .activeNav.navLink, .navLink:hover, .navLink:focus{
+      background: linear-gradient(90deg, #cc0000, #cc0000, transparent);
+      backdrop-filter: blur(6px);
+    }
+  a img.navImage{
+      display: block;
+      width: 100%;
+			    padding: 0px 0px 8px 0px;
+    }
+
+a picture:hover, a picture:focus, a img.navImage:hover, a img.navImage:focus{
+        filter: blur(.5px) brightness(0.5);
+        transition: .75s;
+      }
+
+  .navLinkIcon.icon:before, .navLinkIcon.icon:after {
+        padding: 5px;
+        align-content: center;
+        }
+
+  .navLinkIcon.icon {
+        color:#efefef;
+        background:radial-gradient(#c00,#a00);
+        border-radius:50%;
+        transition-duration: .42s;
+        transition-property: transform;
+        display: inline-flex;
+        font-size: 2.75rem;
+        padding: 0.95rem;
+        width: max-content;
+        margin: auto;
+      }
+  a.navLinkIcon__link:hover .navLinkIcon.icon {
+        color: #fff;
+        background: radial-gradient(#c00, #900, #900);
+        transform: scale(1.07);
+      }
+  a.navLinkIcon__link:focus .navLinkIcon.icon{
+        color:#fff;
+        background: radial-gradient(#c00, #900, #900);
+        transform: scale(1.15);
+      }
+  .navLinkIcon__link-wrapper{
+        display:inline-block;
+        text-align: center;
+        width: 100%;
+        padding: .5em;
+        }
+  .navLinkIcon__link-wrapper h2{
+        text-decoration: none;
+        padding-top: .42rem;
+        font-size: .75rem;
+        letter-spacing: .05rem;
+        font-weight: normal;
+        }
+  a.navLinkIcon__link:hover h2{
+          text-decoration: underline;
+          }
+  a.navLinkIcon__link:focus h2{
+          text-decoration: underline;
+          }
+
+}
+
+{% comment %}/* Tablet-landscape (and larger) */{% endcomment %}
+@media only screen and (min-width:922px) {
+  nav a, li.top-navigation, li.navSection, a.navSectionHeading{
+      font-size: 1em;
+    }
+  li.top-navigation a.top-navigation{
+      padding: .8em .5em ;
+    }
+  li.navLink a{
+     font-size:.87em;
+   }
+	.subMenu{
+		 margin-top:-10px;
+	 }
+ .navLinkIcon.icon {
+       font-size: 3.75rem;
+       padding: 0.95rem;
+      }
+  .navLinkIcon__link-wrapper h2{
+       font-size: 1rem;
+       letter-spacing: .05rem;
+      }
+}
+
+/* Laptops (and larger) */
+@media only screen and (min-width:1200px) {
+  nav a, li.navSection, li.top-navigation, a.navSectionHeading{
+      font-size: 1.1em;
+    }
+  li.top-navigation a.top-navigation{
+      padding: .9em .8em ;
+    }
+  li.navLink a{
+     font-size:.9em;
+   }
+	 .subMenu{
+ 		 margin-top: -15px;
+ 	 }
+   .navLinkIcon.icon {
+         font-size: 4.1rem;
+         padding: 0.95rem;
+    }
+    .navLinkIcon__link-wrapper h2{
+         font-size: 1.35rem;
+         letter-spacing: .05rem;
+    }
+}
+
+{% comment %}
+/*-------------------------------------------*/
+/* -- Header styles -- */
+/*-------------------------------------------*/
+{% endcomment %}
+
+.header_social .icon:hover, .header_social .icon:focus {
+  color: #000;
+  transition: .5s;
+}
+
+nav li .navigation_topLevel:hover {
+  background-color: #900;
+  transition: 1s;
+}
+
+
+{% comment %}
+/*-------------------------------------------*/
+/* -- Footer styles -- */
+/*-------------------------------------------*/
+{% endcomment %}
+footer .footer__wrapper{
+  margin: auto;
+}
+footer {
+    background-color: #ffffff;
+    border-top: 6px solid #000000;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    min-height: 56.5vh;
+    clear:both;
+}
+
+footer a {
+    color: #c00;
+}
+
+footer a:hover {
+    color: #900;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+footer h2{
+  font-size: 1.2em;
+}
+
+footer p{
+  font-size: .85em;
+}
+
+#ReggieHead {
+    position: relative;
+    background: url(/assets/graphics/reggieHeadBW.png) center no-repeat;
+    background-size: 3em;
+    height: 4em;
+    width: 4em;
+    margin: auto;
+    transition: .5s;
+}
+
+#ReggieHead:hover {
+    background: url(/assets/graphics/reggieHeadColor.png) center no-repeat;
+    background-size: 3em;
+    transition: .5s;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+
+.footer_applyNow {
+    margin: 1.5em 0;
+}
+
+.footer_applyNow a, .footer_applyNow a:hover{
+  text-decoration: none;
+}
+.footer_applyNow-button {
+    background-color: transparent;
+    font-family: ISUSemibold,"Myriad Pro",Helvetica,sans-serif;
+    border: 2px solid #CC0000;
+    padding: .5em;
+    font-size: 1.2em;
+    transition: 1s;
+
+
+}
+
+.footer_applyNow-button:hover,.footer_applyNow-button:focus{
+    background-color: #CC0000;
+    color: #ffffff ;
+    border: 2px solid #CC0000;
+    text-decoration: none;
+    transition: 1s;
+
+}
+
+.footer_navigation{
+  margin-bottom: 1em;
+}
+
+.footer_copyright{
+  border-top: 1px solid #ffffff;
+  padding-top: 1em;
+}
+
+.footer_social{
+  padding: 2em 0;
+}
+
+.footer_social-one:after {
+  font-family: 'isu-icons-new';
+  content: "\eB00";
+}
+
+.footer_social-two:after {
+    font-family: 'isu-icons-new';
+    content: "\eB01";
+}
+
+.footer_social-three:after {
+    font-family: 'isu-icons-new';
+    content: "\eB04";
+}
+
+footer .icon {
+    font-size: 3em;
+}
+
+footer a.icon{
+  transition: .5s;
+  color: #000;
+  text-decoration: none;
+}
+
+footer a.icon:hover {
+    border: none;
+    color: #767676;
+    transition: .5s;
+}
+{% comment %}
+/*-------------------------------------------*/
+/* -- Background styles -- */
+/*-------------------------------------------*/
+{% endcomment %}
+.background__ISU-WEB-chevron{
+background:#fff url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%23d6d6d6' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E") center top repeat
+}
+.background__ISU-WEB-chevron-e9{
+background:#fff url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%23e9e9e9' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E") center top repeat
+}
+.background__ISU-WEB-chevron-cc{
+background:#fff url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%23cccccc' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E") center top repeat
+}
+.background__dots{
+  padding:.5rem;
+  background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23aaaaaa' fill-opacity='0.29' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"),radial-gradient( #fff, #fff, #eee, #eee, #ddd, #ccc, #bbb);
+}
+
+.background__plain-dots{
+  padding:.5rem;
+  background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23aaaaaa' fill-opacity='0.29' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+
+}
+
+
+.background__square-tiles{
+  background-color: #f2f2f2;
+  background-image: url(/assets/graphics/transparent-square-tiles.png);
+  // padding: 2rem 0;
+}
+.background__ISU-WEB-black-stripe{
+  background: #000 url(https://cdn.illinoisstate.edu/special/patterns/diagonal-grey.jpg) repeat 0 0;
+  padding:2rem 0;
+}
+{% comment %}
+/*-------------------------------------------*/
+/* -- Media styles -- */
+/*-------------------------------------------*/
+{% endcomment %}
+
+
+{% comment %} /* Mobile-landscape (and larger) */ {% endcomment %}
+
+@media only screen and (min-width:400px) {
+  .footer_applyNow {
+      margin: 2.5em 0;
+  }
+
+  .footer_applyNow a{
+    font-size: 1em;
+  }
+
+  .footer_navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+	.events__wrapper header{
+		font-size:2rem;
+	}
+}
+
+{% comment %} /* Tablet-portrait (and larger) */ {% endcomment %}
+
+@media only screen and (min-width:768px) {
+  footer p{
+    font-size: 1em;
+  }
+  .isu-logo .isu-logo-seal-wrapper .isu-logo-seal {
+    width: 5em;
+    height: 5em;
+  }
+
+  .header_top__wrapper {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 50% 50%;
+  }
+
+  .isu-logo-two-line {
+    -ms-grid-column: 1;
+  }
+
+  .header_social {
+    -ms-grid-column: 2;
+    margin-top: 0;
+    justify-self: end;
+    align-self: center;
+  }
+        {% comment %}
+  // .img-text-wrap{
+  //   float:left;
+  //   margin-right:20px;
+  //   margin-bottom:5px;
+  // } 
+  {% endcomment %}
+
+}
+
+{% comment %} /* Tablet-landscape (and larger) */ {% endcomment %}
+@media only screen and (min-width:922px) {
+  .isu-logo .isu-logo-seal-wrapper .isu-logo-seal.isu-logo-full-seal {
+    display: block;
+    width: 4.5em;
+    height: 4.5em;
+  }
+
+  .isu-logo .isu-logo-seal-wrapper .isu-logo-seal {
+    display: none;
+  }
+}
+
+{% comment %} /* Laptops (and larger) */ {% endcomment %}
+@media only screen and (min-width:1200px) {
+  footer p {
+    font-size: 1.25em;
+  }
+
+  .easterEggs{
+    text-align: center;
+    width: 64px;
+    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    top: -50px;
+    position: relative;
+  }
+
+  .footer_copyright{
+    grid-column: 1/span 2;
+    text-align: center;
+  }
+
+  .footer_social{
+    grid-column: 1/span 2;
+    text-align: center;
+  }
+  .isu-logo .isu-logo-seal-wrapper .isu-logo-seal.isu-logo-full-seal {
+    width: 6em;
+    height: 6em;
+  }
+
+  .isu-logo .isu-logo-wordmark-wrapper .isu-logo-wordmark {
+    font-size: 2.15rem;
+  }
+
+  .isu-logo .isu-logo-wordmark-wrapper .isu-logo-subscript {
+    font-size: 1.1rem;
+  }
+}
+
+{% comment %}
+/*-------------------------------------------*/
+/* -- Image Styles -- */
+/*-------------------------------------------*/
+ /*NOTES:*/
+
+ /*What I have found is that with the clamp function we can get 2 sets of media querries to cover the full scope of responsive sizing.*/
+ /*Meaning one desktop and one mobile, if I had to guess it would be best to set up the mobile as the default css and then a min-width trigger at our 760px media query for the desktop experience.*/
+ {% endcomment %}
+ .cj-1x1-circle{
+  border-radius: 50%;
+}
+{% comment %}
+/*------------------- ------------------------*/
+/*------------------- Block Centered ------------------------*/
+/*------------------- ------------------------*/
+/*------------------ Landscape -------------------------*/
+/*------------------ 3x2 -------------------------*/
+{% endcomment %}
+.cj-3x2-image__body-copy--block-centered{
+  width: unquote("clamp(70vw, 90% - 15vw, 95vw)");
+  height: auto;
+  text-align: center; 
+  display: block;     
+  margin: auto;
+}
+.cj-3x2-image__aside--block-centered{
+  width: unquote("clamp(70vw, 90% - 15vw, 95vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+.cj-3x2-image__two-column--block-centered{
+  width: unquote("clamp(70vw, 90% - 15vw, 95vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+{% comment %} /*------------------ 4x3 -------------------------*/ {% endcomment %}
+.cj-4x3-image__body-copy--block-centered{
+  width: unquote("clamp(70vw, 85% - 15vw, 90vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+.cj-4x3-image__aside--block-centered{
+  width: unquote("clamp(70vw, 85% - 15vw, 90vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+.cj-4x3-image__two-column--block-centered{
+  width: unquote("clamp(70vw, 85% - 15vw, 90vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+{% comment %} /*------------------ 16x9 -------------------------*/ {% endcomment %}
+.cj-16x9-image__body-copy--block-centered{
+  width:unquote("clamp(75vw, 100% - 5vw, 95vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+.cj-16x9-image__aside--block-centered{
+  width:unquote("clamp(75vw, 100% - 5vw, 95vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+.cj-16x9-image__two-column--block-centered{
+  width:unquote("clamp(75vw, 100% - 5vw, 95vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+{% comment %}
+/*------------------ Square/Circle -------------------------*/
+/*------------------ 1x1 -------------------------*/
+{% endcomment %}
+.cj-1x1-image__body-copy--block-centered{
+  width: unquote("clamp(25vw, 100% - 28vw, 80vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+.cj-1x1-image__aside--block-centered{
+  width: unquote("clamp(25vw, 100% - 28vw, 80vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+.cj-1x1-image__two-column--block-centered{
+  width: unquote("clamp(25vw, 100% - 28vw, 80vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+{% comment %}
+/*------------------ Portrait -------------------------*/
+/*------------------ 2x3 -------------------------*/
+{% endcomment %}
+.cj-2x3-image__body-copy--block-centered{
+  width: unquote("clamp(50vw, 90% - 25vw, 75vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+.cj-2x3-image__aside--block-centered{
+  width: unquote("clamp(50vw, 90% - 25vw, 75vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+.cj-2x3-image__two-column--block-centered{
+  width: unquote("clamp(50vw, 90% - 25vw, 75vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+{% comment %} /*------------------ 3x4 -------------------------*/ {% endcomment %}
+.cj-3x4-image__body-copy--block-centered{
+  width: unquote("clamp(50vw, 90% - 20vw, 90vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+.cj-3x4-image__aside--block-centered{
+  width: unquote("clamp(50vw, 90% - 25vw, 90vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+.cj-3x4-image__two-column--block-centered{
+  width: unquote("clamp(50vw, 90% - 20vw, 90vw)");
+  height: auto; 
+  text-align: center; 
+  display: block;
+  margin: auto;
+}
+{% comment %}
+// Text-wrapping notes
+// One Idea is to restrict this option to only full-width text fields (no to aside, & two-columns)
+// If we did this we would only need a universal margin via Clamp and the float.
+
+// 4x3-image__two-column trigger at (922px)
+// float: left;
+// margin: 0 clamp(10px, 5px + 1vw, 30px) 0 0;
+// width: clamp(10%,25vw,50%);
+
+
+// 3x4-image__body trigger at (768px)
+// float: left;
+// margin: 0 clamp(10px, 5px + 1vw, 30px) 0 0;
+{% endcomment %}
+
+
+@media only screen and (min-width:400px) {
+}
+@media only screen and (min-width:650px) {
+}
+@media only screen and (min-width:768px) {
+  .cj-3x2-image__body-copy--block-centered{
+    width: unquote("clamp(25vw, 75% - 25vw, 75vw)");
+  }
+  .cj-3x2-image__aside--block-centered{
+    width: unquote("clamp(50%, 100%, 100%)");
+  }
+  .cj-3x2-image__two-column--block-centered{
+    width: unquote("clamp(25vw, 100%, 100%)");
+  }
+  .cj-4x3-image__body-copy--block-centered{
+    width:unquote("clamp(25vw, 75% - 25vw, 70vw)");
+  }
+  .cj-4x3-image__two-column--block-centered{
+    width:unquote("clamp(25vw, 100%, 100%)");
+  }
+  .cj-4x3-image__aside--block-centered{
+    width:unquote("clamp(10%, 100%, 100%);");
+  }
+  .cj-16x9-image__body-copy--block-centered{
+    width:unquote("clamp(25vw, 75% - 25vw, 70vw)");
+  }
+  .cj-16x9-image__aside--block-centered{
+    width:unquote("clamp(50%, 100%, 100%)");
+  }  
+  .cj-16x9-image__two-column--block-centered{
+    width:unquote("clamp(25vw, 100%, 100%);");
+  }
+  .cj-1x1-image__body-copy--block-centered{
+    width:unquote("clamp(25vw, 75% - 27vw, 30vw)");
+  }
+  .cj-1x1-image__aside--block-centered{
+    width: unquote("clamp(50%, 100%, 100%)");
+  }
+  .cj-1x1-image__two-column--block-centered{
+  width: unquote("clamp(25vw, 100%, 80%)");
+  }
+  .cj-2x3-image__body-copy--block-centered{
+    width:unquote("clamp(10vw, 50% - 20vw, 33vw)"); 
+  }
+  .cj-2x3-image__aside--block-centered{
+    width: unquote("clamp(50%, 100%, 80%)");
+  }  
+  .cj-2x3-image__two-column--block-centered{
+    width:unquote("clamp(10vw, 100%, 60%)"); 
+  }
+  .cj-3x4-image__body-copy--block-centered{
+    width:unquote("clamp(10vw, 50% - 18vw, 33vw)"); 
+  }
+  .cj-3x4-image__aside--block-centered{
+    width: unquote("clamp(50%, 100%, 80%)");
+  }  
+  .cj-3x4-image__two-column--block-centered{
+    width:unquote("clamp(10vw, 100%, 63%)"); 
+  }
+  .text-wrap-align-left{
+    float: left;
+    margin: 0 10px 10px 0;
+    clear: right;
+  }
+  .text-wrap-align-right{
+    float: right;
+    margin: 0 0 10px 10px;
+    clear: left;
+  }
+}
+@media only screen and (min-width:922px) {
+}
+@media only screen and (min-width:1200px) {
+}
+{% comment %}
+/*-------------------------------------------*/
+/* -- Video Styles -- */
+/*-------------------------------------------*/
+{% endcomment %}
+.youtube-embed-wrapper{
+	width: clamp(200px,100%,640px);
+	height: auto;
+}
+{% comment %}
+/* Former way of doing Video may be active in CJ-CMS unsure atm*/
+{% endcomment %}
+.cas-embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.cas-embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+{% comment %}
+/* 400 styles */
+{% endcomment %}
+@media only screen and (min-width:400px) {
+.cj-cms-image__portrait--full-width{
+  max-height: 75vw;
+}
+.cj-cms-image__portrait--twoCol-width{
+  max-height:50vw;
+}
+.cj-cms-image__landscape--full-width{
+  max-width: 100%;
+}
+.cj-cms-image__landscape--twoCol-width{
+  max-width: 100%;
+}
+.cj-cms-image__square--full-width{
+  max-width: 100%;
+}
+.cj-cms-image__square--twoCol-width{
+  max-width: 100%;
+}
+
+}
+@media only screen and (max-width: 599px){
+#iguide-float .iguide-link-divider, #iguide-float .iguide-link {
+    display: none!important;
+}
+}
+@media only screen and (min-width:650px) {
+  .cj-cms-image__landscape--full-width{
+    max-width: 33vw;
+  }
+  .cj-cms-image__text-wrap--left{
+  float:left;
+  margin-right:1rem;
+  padding-right:1rem;
+  clear:both;
+  }
+  .cj-cms-image__text-wrap--right{
+    float:right;
+    margin-left:1rem;
+    padding-left:1rem;
+    clear:both;
+  }
+}
+{% comment %}
+/* 768 styles */
+{% endcomment %}
+@media only screen and (min-width:768px) {
+.cj-cms-image__portrait--full-width{
+  max-height: 50vw;
+}
+.cj-cms-image__portrait--twoCol-width{
+  max-height:768px;
+}
+.cj-cms-image__landscape--full-width{
+  max-width: 33vw;
+}
+.cj-cms-image__landscape--twoCol-width{
+  max-width: 50%;
+}
+.cj-cms-image__square--full-width{
+  max-width: 33vw;
+}
+.cj-cms-image__square--twoCol-width{
+  max-width: 50%;
+}
+}
+
+{% comment %}
+/* 920 styles */
+{% endcomment %}
+@media only screen and (min-width:922px) {
+.cj-cms-image__portrait--full-width{
+  max-height: 50vh;
+}
+.cj-cms-image__portrait--twoCol-width{
+  max-height:50vh;
+}
+.cj-cms-image__landscape--full-width{
+  max-width: 33vw;
+}
+.cj-cms-image__landscape--twoCol-width{
+  max-width: 50%;
+}
+.cj-cms-image__square--full-width{
+  max-width: 33vw;
+}
+.cj-cms-image__square--twoCol-width{
+  max-width: 50%;
+}
+}
+
+{% comment %}
+/* 1200 styles */
+{% endcomment %}
+@media only screen and (min-width:1200px) {
+.cj-cms-image__portrait--full-width{
+  max-height: 495px;
+}
+.cj-cms-image__portrait--twoCol-width{
+  max-height: 495px;
+}
+.cj-cms-image__landscape--full-width{
+  max-width: 495px;
+}
+.cj-cms-image__landscape--twoCol-width{
+  max-width: 247.5px;
+}
+.cj-cms-image__square--full-width{
+  max-width: 495px;
+}
+.cj-cms-image__square--twoCol-width{
+  max-width: 247.5px;
+}
+}

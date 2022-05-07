@@ -1,0 +1,21 @@
+{% include internal-css/critical.min.css %}
+
+/* This is where the internal css that ONLY impacts Default Layout gets inserted. */
+
+.primary-textBlock__container{
+  padding:.5rem;
+}
+.single-textBlock__container{
+  padding:.5rem;
+}
+main{
+  padding:3rem 0;
+}
+@media only screen and (min-width:768px) {
+  .primary-textBlock__container{
+    padding: 0 2rem;
+  }
+  .single-textBlock__container{
+    padding:2rem;
+  }
+}

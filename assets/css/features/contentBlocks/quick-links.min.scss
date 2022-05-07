@@ -1,0 +1,111 @@
+---
+---
+.quick-link__wrapper{
+  display:inline-block;
+  text-align: center;
+  width: 100%;
+margin: auto;
+}
+a.quick-links__link {
+    text-decoration: none;
+  }
+.quick-links__link .icon {
+color:#efefef;
+background:radial-gradient(#cc0000,#aa0000);
+/* clip-path: circle(50% at 50% 50%); */
+border-radius:50%;
+transition-duration: .42s;
+transition-property: transform;
+display: inline-flex;
+font-size: 2.75rem;
+padding: 1.5rem;
+width: max-content;
+margin: auto;
+/* text-decoration: none; */
+
+}
+.quick-link__link-wrapper {
+margin: 2.5rem 0;
+}
+.quick-links__link h2{
+/* font-size: 2.25rem; */
+padding-top: .42rem;
+font-size: 1.95rem;
+/* display: inline-block; */
+}
+
+.quick-link__wrapper a:hover, .quick-link__wrapper a:focus {
+  color: #cc0000;
+  text-decoration: none;
+}
+
+.quick-link__wrapper a:hover h2, .quick-link__wrapper a:focus h2 {
+  color: #660000;
+  text-decoration: underline;
+}
+a.quick-links__link:hover .icon {
+  color: #ffffff;
+  background: radial-gradient(#cc0000, #990000, #990000);
+  transform: scale(1.07);
+}
+a.quick-links__link:focus .icon {
+  color:#ffffff;
+  background: radial-gradient(#cc0000, #990000, #990000);
+  transform: scale(1.15);
+}
+
+.icon.icon__file-pdf--before.quick-link-icon:hover{
+background:#bbbbbb;
+color:#ffffff;
+}
+
+
+/* Tablet-portrait (and larger) */
+@media only screen and (min-width:768px) {
+.quick-link__wrapper{
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.quick-links__link .icon {
+  font-size: 7.5rem;
+  padding: 3.25rem;
+  display: flex;
+
+}
+.quick-link__link-wrapper {
+  flex-direction: column;
+  width: min-content;
+  margin: .65rem 1.75rem;
+}
+.background__dots{
+  padding:2rem;
+}
+}
+@media only screen and (min-width:922px) {
+.quick-link__wrapper{
+  /* justify-content: space-evenly; */
+}
+
+.quick-link__link-wrapper {
+  margin: .65rem 3rem;
+  width:unset;
+}
+
+
+.quick-links__link .icon {
+  font-size: 8.5rem;
+  padding: 4.25rem;
+}
+}
+@media only screen and (min-width:1200px) {
+.quick-links__link .icon {
+  font-size: 7.5rem;
+  padding: 3.25rem;
+}
+
+.quick-link__link-wrapper {
+  margin: .65rem auto;
+}
+
+}

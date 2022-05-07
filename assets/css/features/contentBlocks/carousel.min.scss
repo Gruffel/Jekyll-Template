@@ -1,0 +1,55 @@
+---
+---
+#logoCarousel{
+padding-bottom:25px;
+padding-top:25px;
+}
+.carousel-3d-slide {
+background-color:white;
+  padding: 20px;
+  z-index:1;
+  border: 26px solid #000;
+}
+.carousel-3d-container[data-v-c06c963c]{
+margin:0px auto;
+}
+.carousel-3d-slide img{
+  margin-top: -25px
+}
+.next[data-v-43e93932], .prev[data-v-43e93932]{
+  font-size: 90px;
+    text-shadow:1px 1px 10px #333;
+}
+.prev[data-v-43e93932],.next[data-v-43e93932]{
+	color:#ffffff;
+}
+.carousel-3d-container[data-v-c06c963c] {
+z-index:1;
+}
+
+@media handheld, screen and (max-width: 979px) {
+.prev[data-v-43e93932],.next[data-v-43e93932]{
+	color:#000;
+}
+.carousel-3d-container {
+	overflow:visible;
+}
+}
+
+@media handheld, screen and (max-width: 644px) {
+  .carousel-3d-slide{
+		width:150px;
+	}
+  .carousel-3d-slide .current{
+    width:150px;
+  }
+	.carousel-3d-container{
+		overflow:visible;
+    display: none;
+	}
+	.prev[data-v-43e93932],.next[data-v-43e93932]{
+	color:#000;
+}
+}
+
+

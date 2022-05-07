@@ -1,0 +1,21 @@
+{% comment %}<!-- SEARCH START -->{% endcomment %}
+<section role="search" aria-label="Search">
+  <div id="layerSearch">
+      <div id="searchBox">
+        <form action="/search" method="get">
+          <div id="searchBackground">
+            <input type="hidden" name="site" value="isu_collection" />
+            <input type="hidden" name="client" value="isu_collection" />
+            <input type="hidden" name="clientID" value="Illinois State University" />
+            <input type="hidden" name="output" value="xml_no_dtd" />
+            <input name="filter" type="hidden" value="0" />
+            <button title="Sumbit Search" class="icon icon__search--before"><span class="visuallyhidden">Search</span></button>
+            <input type="text" title="Search The Site" id="searchBoxText" aria-describedby="searchsite" name="q" />
+            <span id="searchsite">Search a topic to find more information in Illinois State University's {{ site.title }} website.</span> {% comment %}<!-- siteTitle is located in config.yaml-->{% endcomment %}
+            <input type="hidden" name="as_sitesearch" value="{{ site.search-path }}"/> {% comment %}<!-- site.search-path is located in config.yaml-->{% endcomment %}
+          </div>
+        </form>
+      </div>
+  </div>{% comment %}<!--close layerSearch-->{% endcomment %}
+</section>
+{% comment %}<!-- SEARCH END -->{% endcomment %}

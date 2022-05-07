@@ -1,0 +1,147 @@
+---
+---
+.btn {
+  min-width: 170px;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 1.25rem;
+  // padding: 50px;
+  display: inline-block;
+  transition: all .35s;
+}
+.btn:hover , .btn:focus {
+  text-decoration: none;
+}
+
+a {
+  // color: #cc0000;
+  /* text-decoration: none */;
+}
+a:hover a:focus {
+   text-decoration: none ;
+}
+
+.btn__red-white {
+  background-color: #fff;
+  border: 2px solid #cc0000;
+}
+
+.btn__gray-white {
+  color: #232323 !important;
+  background-color: #fff;
+  border: 2px solid #232323;
+}
+
+.btn__red {
+  color: #fff !important;
+  background-color: #cc0000;
+  border: 2px solid #cc0000;
+}
+
+.btn__drk-red {
+  color: #fff !important;
+  background-color: #900;
+  border: 2px solid #900;
+}
+
+.btn__gray {
+  color: #fff !important;
+  background-color: #232323;
+  border: 2px solid #232323;
+}
+
+.btn__clear {
+  color: #fff !important;
+  // background-color: ;
+  border: 2px solid #fff;
+  // border: 2px solid #232323;
+}
+
+.btn__red-white:hover,  .btn__red-white:focus {
+  background-color: #cc0000;
+  border: 2px solid #cc0000;
+  color:#ffffff;
+  text-decoration: none
+}
+
+.btn__gray-white:hover, .btn__gray-white:focus {
+  color: #fff !important;
+  background-color: #232323;
+  border: 2px solid #232323;
+  text-decoration: none
+}
+
+.btn__red:hover,  .btn__red:focus {
+  color: #cc0000 !important;
+  background-color: #fff;
+  border: 2px solid #cc0000;
+  text-decoration: none
+}
+
+.btn__drk-red:hover, .btn__drk-red:focus {
+  color: #900 !important;
+  background-color: #fff;
+  border: 2px solid #900;
+  text-decoration: none
+}
+
+.btn__gray:hover, .btn__gray:focus  {
+  color: #232323 !important;
+  background-color: #fff;
+  border: 2px solid #232323;
+  text-decoration: none
+}
+
+.btn__clear:hover,  .btn__clear:focus {
+  color: #666666!important;
+  // color: #666 !important;
+  background-color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none
+}
+@supports (backdrop-filter: blur(5px)) {
+.btn__clear {
+  backdrop-filter:blur(10px);
+  // -webkit-backdrop-filter:blur(10px);
+  }
+}
+@supports (-webkit-backdrop-filter: blur(5px)) {
+.btn__clear {
+  -webkit-backdrop-filter:blur(10px);
+  }
+}
+@supports not (backdrop-filter: blur(5px)) {
+.btn__clear {
+    background-color: rgba(0,0,0,.5);
+    }
+}
+
+.btn__rounded {
+  border-radius: 10px;
+}
+
+.btn__pill {
+  border-radius: 100px;
+}
+
+.btn__large {
+  min-width: 170px;
+  padding: 1.5rem 2.5rem;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.btn__medium {
+  min-width: 120px;
+  font-size: 1.25rem;
+  padding: 1.25rem;
+  display: inline-block;
+}
+
+.btn__small {
+  min-width: 100px;
+  font-size: .85rem;
+  padding: .85rem;
+  display: inline-block;
+}

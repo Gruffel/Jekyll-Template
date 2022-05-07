@@ -1,0 +1,157 @@
+{%comment%}
+##############################
+Base line JavaScript files
+##############################
+{%endcomment%}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="{{site.baseurl}}/assets/script/cdnIncludes.min.js" ></script>
+<script src="https://iguides.illinoisstate.edu" ></script>
+
+{%comment%}
+##############################
+    Template influced JavaScirpt files
+##############################
+{%endcomment%}
+{%- if page.url != "/" %}{%comment%}All pages but homepage scripts{%endcomment%}{%- endif %}
+
+
+
+{%- if page.url == "/" %}{%comment%}Homepage exclusive scripts{%endcomment%}
+<!-- <script src="/assets/script/slick.min.js"></script> -->
+<!--[if lt IE 9]><script scr=”http://html5shim.googlecode.com/svn/trunk/html5.js”></script><![end if]-->
+{%- endif %}
+
+{%comment%}
+##############################
+    Features Tiggered JavaScript files
+##############################
+{%endcomment%}
+{% assign buildPageFeatureArray = page.features %}
+{%- for buildPageFeatureData in buildPageFeatureArray -%}
+{%comment%}
+##########
+PREFETCH SCRIPTS
+##########
+{%endcomment%}
+{%- if buildPageFeatureData.facultyStaff != nil and facultyStaffSwitchJS != true -%}{% assign facultyStaffSwitchJS = true %}{% assign easyResponsiveJSSwitch = true %}
+  <link rel="preload" href="//cdn.illinoisstate.edu/js/plugins/easy-responsive-tabs/1.4/easy-responsive-tabs.min.js" as="script">
+{%- endif %}
+{% comment %}
+##########
+BUTTON TYPES
+##########
+{% endcomment %}
+{% comment %}
+##########
+CONTENT BLOCKS
+##########
+{% endcomment %}
+    {%- if buildPageFeatureData.accordion != nil and accordionSwitchJS != true -%}{% assign accordionSwitchJS = true %}
+        {% comment %} <!-- accordion scripts -->{% endcomment %}
+        <script src="{{site.baseurl}}/assets/script/accordions.js"></script>
+    {%- endif %}
+    {%- if buildPageFeatureData.slider != nil and sliderSwitchJS != true  -%}{% assign sliderSwitchJS = true %}
+        {% comment %} <!-- slider scripts -->{% endcomment %}
+        <script src="{{site.baseurl}}/assets/script/slick.min.js"></script>
+    {%- endif %}
+{% comment %}
+##########
+FEEDS & PULLS
+##########
+{% endcomment %}
+{%- if buildPageFeatureData.programs != nil and programsSwitchJS != true -%}{% assign programsSwitchJS = true %}{% assign easyResponsiveJSSwitch = true %}
+<script src="//cdn.illinoisstate.edu/js/plugins/easy-responsive-tabs/1.4/easy-responsive-tabs.min.js"></script>
+{%- endif %}
+{%- if buildPageFeatureData.facultyProfile != nil and facultyProfileSwitchJS != true -%}{% assign facultyProfileSwitchJS = true %}{% assign easyResponsiveJSSwitch = true %}
+<script async src="//cdn.illinoisstate.edu/js/plugins/easy-responsive-tabs/1.4/easy-responsive-tabs.min.js" ></script>
+{%- endif %}
+
+{%- endfor -%}
+
+{%comment%}
+##############################
+    Snippets Tiggered JavaScript files
+##############################
+{%endcomment%}
+{% assign buildPageSnippetArray = page.snippets %}
+{%- for buildPageSnippetData in buildPageSnippetArray -%}
+{% comment %}
+##########
+BUTTON TYPES
+##########
+{% endcomment %}
+{% comment %}
+##########
+CONTENT BLOCKS
+##########
+{% endcomment %}
+{% comment %}
+##########
+FEEDS & PULLS
+##########
+{% endcomment %}
+{%- endfor -%}
+
+
+{% comment %} 
+
+📓📔📝📓📔📝
+
+    Everything bellow is Pre-Git Jekyll way to include styles 
+        -- One must go through and remove any duplicates that are not needed. --
+        -- There might be some styles that have not gotten integrated so we should keep it for the time being. --
+
+📓📔📝📓📔📝
+
+{% endcomment %}
+
+{% comment %}
+<!-- COPY PASTA FOR NEW FEATURE -->
+{% endcomment %}
+
+{% comment %}
+
+{% if page.features. != nil or page.features.alpha. != nil or page.features.pre. != nil or page.features.post. != nil or page.features.omega. != nil %}{% endif %}
+
+{% endcomment %}
+
+{%- if page.features.slider != nil or page.features.alpha.slider != nil or page.features.pre.slider != nil or page.features.post.slider != nil or page.features.omega.slider != nil -%}
+<script src="{{site.baseurl}}/assets/script/slick.min.js"></script>
+{%- endif %}
+
+{%- if page.features.faculty-profile != nil or page.features.alpha.faculty-profile != nil or page.features.pre.faculty-profile != nil or page.features.post.faculty-profile != nil or page.features.omega.faculty-profile != nil -%}
+{% comment %} <!-- Faculty-profile Scripts -->{% endcomment %}
+<script async src="//cdn.illinoisstate.edu/js/plugins/easy-responsive-tabs/1.4/easy-responsive-tabs.min.js" ></script>
+{%- endif %}
+
+
+{% if page.features.carousel != nil or page.features.alpha.carousel != nil or page.features.pre.carousel != nil or page.features.post.carousel != nil or page.features.omega.carousel != nil %}
+{% comment %} <!-- Carousel Scripts -->{% endcomment %}
+<script src="{{site.baseurl}}/assets/script/photoswipe-ui-default.min.js" ></script>
+<script src="{{site.baseurl}}/assets/script/photoswipe.min.js"></script>
+<script src="{{site.baseurl}}/assets/script/NoSwipeindex.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js" ></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10" ></script>
+
+<script src="{{site.baseurl}}/assets/script/vue-carousel-3d.min.js" ></script>
+
+{% endif %}
+{%comment%}
+{% if page.features.pageTabs != nil or page.features.alpha.pageTabs != nil or page.features.pre.pageTabs != nil or page.features.post.pageTabs != nil or page.features.omega.pageTabs != nil %}
+
+<script src="//cdn.illinoisstate.edu/js/plugins/easy-responsive-tabs/1.4/easy-responsive-tabs.min.js"></script>
+
+{% endif %}
+
+{%endcomment%}
+
+
+
+
+
+
+
+
+
+

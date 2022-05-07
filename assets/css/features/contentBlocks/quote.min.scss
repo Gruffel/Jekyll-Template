@@ -1,0 +1,81 @@
+---
+---
+
+[class^="icon__"], [class*=" icon__"] {
+    font-family: 'isu-icons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 17px;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+ }
+ 
+ .icon__quote--after{
+   float: right;
+   transform: rotate(180deg);
+   padding-top: 20px;
+   padding-left: 20px;
+ }
+
+ .icon__quote--before{
+   padding: 20px;
+   float: left;
+ }
+
+ .quote-wrapper{
+   display: grid;
+   border-top: 1px solid black;
+   text-align:center;
+ }
+
+ .quoteLayout_imageBelow{
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: "quote"
+                        "image";
+ }
+
+ .quoteLayout_imageAbove{
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: "image"
+                        "quote";
+ }
+
+ .quoteLayout_imageRight{
+   grid-template-columns: 1fr;
+   grid-template-areas: "quote"
+                        "image";
+ }
+
+ .quoteLayout_imageLeft{
+   grid-template-columns: 1fr;
+   grid-template-areas: "image"
+                        "quote";
+ }
+
+ .quoteLayout_imageless, .quoteLayout_imageBehind{
+   grid-template-areas:"quote";
+ }
+
+ .quote__image{
+   grid-area: image;
+ }
+
+ blockquote.quote-text{
+   margin-top: 45px;
+ }
+
+ @media only screen and (min-width:600px) {
+   .quoteLayout_imageRight{
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: "quote image";
+ }
+
+ .quoteLayout_imageLeft{
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: "image quote";
+ }
+   
+ }

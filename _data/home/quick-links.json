@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "display": {
+      "friendlyname": "Display Contact",
+      "tooltip": "Enables Icon Link to be hidden or live on the website"
+    },
+    "edit-order": {
+      "friendlyname": "Order for editor",
+      "tooltip": "Arranges items in CJ-CMS for the Web Editors"
+    },
+    "icon": {
+      "friendlyname": "Select Icon",
+      "tooltip": "Choose from the icon list"
+    },
+    "title": {
+      "friendlyname": "Link Text",
+      "tooltip": "Inserts the text for the link"
+    },
+    "link": {
+      "friendlyname": "Link",
+      "tooltip": "Inserts the link"
+    }
+  },
+"quick-links": [
+  {
+    "quick-link": "featureName",
+    "editor-order":"1",
+    "icon":"icon__book--before",
+    "title":"Button 1",
+    "link":"/"
+  },
+  {
+    "quick-link": "featureName",
+    "editor-order":"2",
+    "icon":"icon__grad-hat--before",
+    "title":"Button 2",
+    "link":"/"
+  },
+  {
+    "quick-link": "featureName",
+    "editor-order":"3",
+    "icon":"icon__calendar-month--before",
+    "title":"Button 3",
+    "link":"/"
+  },
+  {
+    "quick-link": "featureName",
+    "editor-order":"4",
+    "icon":"icon__trophy--before",
+    "title":"Button 4",
+    "link":"/"
+  }
+]
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:  /HEN/credits/
+Disallow:  README.md

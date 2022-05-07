@@ -1,0 +1,12 @@
+
+
+
+<div class="socialIcons">
+{%- for socialMedia in site.social-media -%}
+{%- if socialMedia.company-name != nul -%}
+  <a class="icon icon__{{socialMedia.company-name | downcase }}--before"  title="{{socialMedia.title}}'s {{socialMedia.company-name}}" href="{{socialMedia.url}}" target="_blank" rel="noopener">
+    <span class="visuallyhidden">{{socialMedia.company-name}}</span>
+  </a>
+{%- endif %}
+{%- endfor -%}
+</div>

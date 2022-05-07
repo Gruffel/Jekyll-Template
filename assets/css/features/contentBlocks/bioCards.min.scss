@@ -1,0 +1,57 @@
+---
+---
+ .bioCards__content {
+  padding: 1.5rem 2rem 0.5rem;
+}
+
+.bioCards__info {
+  // text-align: center;
+  padding: 0 0.5rem;
+}
+
+.bioCards__name {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+picture.bioCards__picture {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.bioCards__title {
+  font-size: 1.75rem;
+  margin:.2em 0;
+  text-align: center;
+  color: #444444;
+}
+
+.pipe-space {
+  display: none;
+}
+@media only screen and (min-width:922px) {
+  .bioCards__info {
+    display: inline-block;
+    // text-align:left;
+  }
+
+  .bioCards__name {
+    display: inline-block;
+    text-align: unset;
+    float: left;
+  }
+
+  .pipe-space {
+    display: unset;
+  }
+
+  .bioCards__title {
+    text-align: unset;
+  }
+
+  .bioCards__content {
+    display: grid;
+    grid: auto / 1fr 4.5fr;
+  }
+}

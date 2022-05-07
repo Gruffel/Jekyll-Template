@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% include structure/head/head.html %}  {% comment %} Inserts head.html in _includes/head/ folder {% endcomment %}
+</head>
+<body>
+    {% include structure/google-noscript.html %}
+    <h1 class="visuallyhidden">Welcome to Illinois State University {{ site.title }} website.</h1>
+  <a href="#main-section" title="Skip to Content" id="skiplink">Skip to Content</a>
+{% comment %}  <style>.college-message{display:none;}.college-message__image-container--light{background:#cc0000;}.college-message__image-container--dark{background:#cc0000;}</style>{% endcomment %}
+    <header>
+        {% include structure/header.html %}   {% comment %} Inserts header.html in _includes folder {% endcomment %}
+        {% include structure/navigation/navigationBuildManager.html %}
+    </header>
+    <main id="main-section">
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        {% include structure/footer.html %}
+    </footer>
+
+    {% include features/contentBlocks/slider/slick-js.html %}
+</body>
+
+</html>

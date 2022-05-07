@@ -1,0 +1,151 @@
+---
+---
+
+
+/* Slider styles added by CAS-IT*/
+
+
+
+  .home-slider{
+    margin:auto;
+    max-height:90vw;
+  }
+.home-slider__image img{
+  width:100%;
+  height: auto;
+}
+.home-slider{
+  grid-column: 1 / span 10;
+  grid-row: 1 / span 1;
+}
+.home-slider__pauseButton-wrapper{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+.slider-container{
+display: grid;
+grid: auto / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.home-slider__pauseButton{
+
+}
+
+    button.home-slider__pauseButton {
+      position: absolute;
+      margin: 15px;
+      z-index: 1;
+      border-radius: 50%;
+      border: none;
+      background-color: #000000;
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 0;
+      box-shadow: .5px .5px 4px white;
+  }
+
+
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    // display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        // display: block;
+        display: -ms-grid;
+        display: grid;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}

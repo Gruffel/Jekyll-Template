@@ -1,0 +1,23 @@
+---
+---
+
+.twoColumn-fixed{
+  padding:.5rem;
+}
+.twoColumn-fixed__container{
+clear: both;
+}
+
+@media only screen and (min-width:768px) {
+  .twoColumn-fixed__container{
+    display: flex;
+    flex-wrap: nowrap;
+    clear: both;
+    margin: auto;
+    justify-content: center;
+  }
+  .twoColumn-fixed{
+    // padding: 0 2rem 2rem 2rem;
+    width:48%;
+  }
+}

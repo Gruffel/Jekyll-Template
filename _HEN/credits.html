@@ -1,0 +1,126 @@
+---
+layout: default
+---
+
+
+<!-- HTML -->
+<div id="game">
+  <div id="playerStats">
+  </div>
+  <div id="actionButtons">
+    <button type="button" id="start" name="button" onclick="StartGame()">START</button>
+  </div>
+  <div id="localDescription">Can you take on CAS IT?.
+
+  </div>
+
+      <form id="nameInput" style="display:none;" onsubmit="return SubmitCharacter();">
+        <label for="fname">Hero Name:</label>
+        <input type="text" id="name" name="fname"><br><br>
+        <input type="submit" id="submitButton" style="" value="Submit">
+      </form>
+</div>
+
+
+<!-- javascript -->
+<script type="text/javascript">
+  {% include features/contentBlocks/HEN/adventure.js %}
+</script>
+
+<!-- CSS -->
+<style media="screen">
+  #localDescription, form#nameInput {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    min-height: 100px;
+    margin-top: 15px;
+  }
+  #game {
+    margin: 50px;
+    max-width: 1000px;
+    max-height: 600px;
+    background-color: lightgray;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  #actionButtons {
+    margin-top: 15px;
+    border: 1px black solid;
+    padding: 5px;
+  }
+  .actionButton {
+    border: 1px black solid;
+    padding: 5px;
+    margin: 5px;
+    transition: .1s;
+  }
+  .actionButton:hover, .actionButton:focus{
+    background: #111;
+    color:#DDD;
+    border:1px #DDD solid;
+  }
+  #start{
+    border: 1px black solid;
+    padding: 5px;
+    margin: 5px;
+    transition: .1s;
+  }
+  #start:hover, #start:focus{
+    background: #111;
+    color:#DDD;
+    border:1px #DDD solid;
+}
+  #playerStats {
+    border: 1px black solid;
+    color: black;
+    padding: 5px;
+  }
+  .stat {
+    padding-right: 10px;
+  }
+
+@media (prefers-color-scheme: dark) {
+  #game{
+    background-color: #0D0D0D;
+    color: #03A62C;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  #playerStats {
+    border: 1px dotted #03A62C;
+    color: #03A62C;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  #playerStats b {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  #actionButtons{
+    border: 1px dotted #03A62C;
+  }
+  .actionButton{
+    background: #022601;
+    border: 1px dotted #03A62C;
+    color: #30F274;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .actionButton:hover, .actionButton:focus{
+    border: 1px dotted #ffffff;
+  }
+  #localDescription, form#nameInput{
+    background-color: #022601;
+    color: #30F274;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  #start{
+    background: #022601;
+    border: 1px dotted #03A62C;
+    color: #30F274;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  #start:hover,#start:focus{
+    border: 1px dotted #ffffff;
+  }
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+}
+</style>

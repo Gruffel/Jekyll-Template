@@ -1,0 +1,4 @@
+{% include internal-css/critical.min.css %}
+
+
+/* This is where the internal css that ONLY impacts Home Layout gets inserted. */

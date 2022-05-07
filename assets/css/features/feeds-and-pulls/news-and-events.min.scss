@@ -1,0 +1,128 @@
+---
+---
+
+{% comment %}
+
+/*-------------------------------------------*/
+/* -- News & Events Styles -- */
+/*-------------------------------------------*/
+// .news__wrapper {
+//   width:63.2%;
+//   display:inline-block;
+//   padding-left:1em;
+// }
+// .events__wrapper {
+//   width:33.7%;
+//   display:inline-block;
+//   padding-left:.5em;
+//   vertical-align: top;
+// }
+
+{% endcomment %}
+.news-img-wrap {
+  margin: auto;
+}
+.cal-item {
+	padding: 1rem 0;
+	border-bottom: 1px solid #d3d3d3;
+}
+.news-description {
+	display: block;
+}
+
+.news__wrapper {
+  width: 95%;
+  margin-top: 30px;
+  padding-left: 1rem
+}
+.events__wrapper {
+  width: 95%;
+  display: inline-block;
+  margin-top: 30px;
+  padding-left: 1rem;
+}
+.news-item {
+	padding: 1rem 0;
+	border-bottom: 1px solid #d3d3d3;
+}
+.news-item-mid {
+	 display: block;
+}
+.news-img-wrap {
+	padding: 0 10px 0 0;
+	width: max-content;
+}
+.news-img-wrap {
+	// margin: none;
+}
+.news-more {
+	display: none;
+}
+.news-item a {
+	color: #c40000;
+	/* text-decoration: none; */
+}
+.news-item a:hover,
+.news-item a:active,
+.news-item a:focus {
+	color: #600;
+	text-decoration: underline;
+}
+
+/* Mobile-landscape (and larger) */
+@media only screen and (min-width:400px) {
+  .news__wrapper {
+    width: 95%;
+    margin-top: 30px;
+  }
+  .events__wrapper {
+    width: 95%;
+    display: inline-block;
+    margin-top: 30px;
+    padding-left: 1rem;
+  }
+	// .news-img-wrap {
+	// 	margin: auto;
+	// }
+	.news__wrapper header{
+		font-size:2rem;
+	}
+}
+/* Tablet-portrait (and larger) */
+@media only screen and (min-width:600px) {
+	.news-item-mid {
+		 display: flex;
+	}
+	.news-summary-wrap {
+		width: 99%;
+				margin:auto 0;
+	}
+	a.news-link {
+    font-size: 1.15rem;
+	}
+	.news-img-wrap {
+		// margin: none !important;
+	}
+}
+/* Tablet-portrait (and larger) */
+@media only screen and (min-width:768px) {
+  .news__wrapper {
+    width:63.2%;
+    display:inline-block;
+    padding-left:1em;
+  }
+  .events__wrapper {
+    width:33.7%;
+    display:inline-block;
+    padding-left:.5em;
+    vertical-align: top;
+  }
+}
+{% comment %}/* Tablet-landscape (and larger) */{% endcomment %}
+@media only screen and (min-width:922px) {
+
+}
+{% comment %}/* Laptops (and larger) */{% endcomment %}
+@media only screen and (min-width:1200px) {
+
+}

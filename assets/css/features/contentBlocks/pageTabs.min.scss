@@ -1,0 +1,32 @@
+---
+---
+.resp-tabs {
+  margin: 0 auto !important;
+  padding: 2em;
+}
+
+.resp-arrow {
+  border-top-color: #000 !important;
+}
+
+.resp-tab-active .resp-arrow {
+  border-bottom-color: #fff !important;
+}
+
+.resp-tab-content {
+  border: 1px solid #ecebeb;
+}
+.resp-tabs-container h3 {
+  padding: 1em 0 0 0;
+}
+
+
+h2.resp-tab-active {
+    background: #cc0000;
+    color: #fff;
+}
+
+.resp-tab-active {
+  border: 1px solid #ecebeb !important;
+  border-bottom: none !important;
+}

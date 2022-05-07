@@ -1,0 +1,15 @@
+{% include structure/head/meta.html %}
+<style>
+{%- if page.url == "/" -%}
+{% include internal-css/critical-home.min.css %}
+{% else %}
+{% include internal-css/critical-default.min.css %}
+{%- endif %}
+</style>
+{%- if page.url != "/" -%}<title>{{ page.title }} | {{ site.title }} | Illinois State University</title>{%- else -%}<title>{{ site.title }} | Illinois State University</title>{%- endif %}
+<link rel="icon" href="{{site.baseurl}}/assets/graphics/favicon.ico" type="image/x-icon" />
+{% include structure/head/css.html %}
+
+{% include structure/head/scripts.html %}
+
+{% include structure/head/google-analytics.html %}

@@ -1,0 +1,10 @@
+{% assign instanceName = buildPageSnippetData.aside %}
+{% assign siteSnippets = site.documents | where:'aside', instanceName %}
+{%- for snippet-md in siteSnippets -%}
+<div class="aside__wrapper">
+      <aside class="max-width__tier-1">
+    {%- if snippet-md.title != nill -%}<h2 class="aside__title">{{snippet-md.title}}</h2>{%- endif %}
+      <div class="content-section">{{ snippet-md.content }}</div>
+      </aside>
+      </div>
+{%- endfor -%}

@@ -1,0 +1,119 @@
+---
+---
+
+
+
+{%comment%}
+This still needs some work... Responsive focus with text.. We will need to layout the scope of use and limits of text..
+{%endcomment%}
+.one3{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1 / span 3;
+  grid-row: 1/ span 1;
+}
+.one3-image__container{
+  grid-column:  1 / span 1;
+
+}
+.one3-text__container{
+grid-column:  2 / span 2;
+background-repeat: no-repeat;
+background-size: cover;
+padding: unquote("clamp(10px, 2rem + 5vw, 4rem)");
+}
+.one3-text__container p, .one3-text__container ul, .one3-text__container li, .one3-text__container h2, .one3-text__container h3, .one3-text__container h4, .one3-text__container h5, .one3-text__container h6{
+  color: white;
+}
+.one3__contents{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.one3__contents h2 {
+  grid-column:1 / span 1;
+  grid-row:1 / span 1;
+  position:absolute;
+  color:#ffffff;
+  background:#00000047;
+  padding:1rem;
+  backdrop-filter: blur(5px);
+  margin: 0;
+}
+
+
+
+{%comment%}
+
+Jekyll 2.0 Way of building
+
+
+.publications h2,
+.flex-contents p {
+  margin-bottom: 0.5rem;
+}
+.flex-contents {
+  padding: 0 0 0 0.5rem;
+}
+.image-flex-contents {
+  padding: 0 0.5rem 0 0;
+}
+
+.image-flex-contents{
+    width:100%;
+    margin:auto;
+  }
+.image-flex-contents img{
+    width: 100%;
+    display:block;
+    margin:auto;
+  }
+.flex-contents{
+    width: 100%;
+  }
+.one-3_flex-container {
+  display: block;
+}
+
+
+.bold {
+  font-family: ISUSemiBold;
+}
+.publications h2,
+.flex-contents p {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width:400px) {
+  .image-flex-contents img{
+      width: 50%;
+    }
+}
+
+
+@media only screen and (min-width:768px) {
+  .image-flex-contents{
+          width:30%;
+        }
+        .image-flex-contents img {
+            display: unset;
+            max-width: 100%;
+            width: auto;
+            max-height: 300px;
+        }
+        .flex-contents{
+        width: 70%;
+      }
+      .one-3_flex-container {
+        display: flex;
+      }
+
+      .flex-contents {
+        padding: 0 0 0 1rem;
+      }
+      .image-flex-contents {
+        padding: 0 1rem 0 0;
+        text-align: center;
+      }
+}
+
+{%endcomment%}

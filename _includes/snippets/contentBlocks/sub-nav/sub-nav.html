@@ -1,0 +1,26 @@
+
+{% assign instanceName = buildPageSnippetData.subNav %}
+{% assign sub-nav-links = site.data.sub-navs.sub-nav | where_exp:"item", "item.display contains instanceName" | group_by_exp:"item","item.display contains instanceName" %}
+{% assign parent-links = site.data.sub-navs.sub-nav-parents | where_exp:"item", "item.display contains instanceName" %}
+
+{%- for parent-link in parent-links -%}
+{%- if buildPageSnippetData.url != parent-link.parent-link-url -%}
+<p>
+  <a href="{{site.baseurl}}{{parent-link.parent-link-url}}" class="sub-nav__parent-link">{{parent-link.link-text}}</a> <span class="sub-nav__page-title"> > {{ page.title }}</span>
+</p>
+{%- endif %}
+{%-endfor-%}
+
+<div class="sub-nav__container">
+{%- for sub-nav-group in sub-nav-links -%}
+<ul class="sub-nav__list-group">
+  {%- for sub-nav in sub-nav-group.items -%}
+  <li class="sub-nav__list-item {%- if sub-nav.icon != nil -%}{{ sub-nav.icon }}{%- endif %}" {%- if buildPageSnippetData.url == sub-nav.url -%} style="display:none;" {%- endif %}>
+    <a {% assign hrefFirstCharacter = sub-nav.url | slice: 0 %} {%- if hrefFirstCharacter != '/' -%} href="{{ sub-nav.url }}"  aria-label="external link" {%- else -%} href="{{site.baseurl}}{{ sub-nav.url }}" {%- endif %} class="{%- if hrefFirstCharacter != '/' -%}icon__external-link--after icon externalLink{%- endif %} sub-nav__link icon icon__chevron-right--after" style="padding: 1rem clamp(.25rem, .1rem + .5vw, .85rem); font-size: clamp(.85rem, .5rem + .5vw, 2.5rem); width:100%;">
+      {{  sub-nav.link-text }} 
+    </a>
+  </li>
+  {%- endfor -%}
+</ul>
+{%- endfor -%}
+</div>

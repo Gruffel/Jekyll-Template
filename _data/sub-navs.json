@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "display": {
+      "friendlyname": "Display Contact",
+      "tooltip": "Enables Profile to be hidden or live on the website"
+    },
+    "parent-link-url": {
+      "friendlyname": "Parent URL",
+      "tooltip": "This is the page that hosts the collection of sub-nav links"
+    },
+    "link-text": {
+      "friendlyname": "Link Text",
+      "tooltip": "This is the text viewable when clicking the link"
+    },
+    "icon": {
+      "friendlyname": "Icon",
+      "tooltip": "This selects the icon to insert into the navigation"
+    }
+  },
+  "sub-nav-parents":[
+    {
+      "display":"topNavSubNavName",
+      "parent-link-url":"/sub-nav/",
+      "link-text":"Main of sub nav"
+    }
+  ],
+  "sub-nav":[
+    {
+      "display":"topNavSubNavName",
+      "icon":"",
+      "link-text":"Sub Page",
+      "url":"/sub-nav/sub-page/"
+    },
+    {
+      "display":"topNavSubNavName",
+      "icon":"",
+      "link-text":"Another Sub",
+      "url":"/sub-nav/another-sub-page/"
+    }
+  ]
+}

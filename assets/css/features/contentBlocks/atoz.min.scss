@@ -1,0 +1,50 @@
+---
+---
+
+.alphabet-list__wrapper{
+    /* max-width:1500px; */
+    margin:auto;
+    text-align:center;
+  }
+  .alphabet-list-content__wrapper{
+    border:1px solid #333;
+    min-height:250px;
+    padding: .5rem;
+    margin: .75rem auto;
+  }
+  .alphabet-list__boxing{
+    margin:auto;
+    width:100%;
+  text-align:left;
+  }
+select{
+  display:inline-block;
+  font-size: 1.25rem;
+  border: 1px solid #e1e1e1;
+  padding: .2em .5em;
+  width:100%;
+  max-width:90px;
+  box-sizing: border-box;
+  margin:0;
+  -moz-appearance: none;
+  -webkit-appearance:none;
+  appearance:none;
+  background: linear-gradient(to bottom, #fff 0%,#fbfbfb 100%);
+  background-repeat: no-repeat, repeat;
+}
+select::-ms-expand{
+  display:none;
+}
+
+label{
+  font-size: 1.25rem;
+}
+
+.unselected{
+  display: none;
+}
+
+.selected{
+  display: block;
+}
+

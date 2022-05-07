@@ -1,0 +1,97 @@
+---
+---
+.text-video_flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+.flex-contents,
+.video-flex-contents {
+  width: 100%;
+  text-align: center;
+  // display: none;
+}
+.flex-contents-video-left {
+  width: 100%;
+  text-align: left;
+  // display: none;
+}
+.flex-contents-video-right {
+  width: 100%;
+  text-align: right;
+  // display: none;
+}
+.flex-contents-video-center{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.flex-contents-video-left p, .flex-contents-video-left h3{
+  margin: 10px 15px;
+  // display: none;
+}
+.flex-contents-video-right p, .flex-contents-video-right h3{
+  margin: 10px 15px;
+  // display: none;
+}
+
+.text-video__background--linear-gradient-white-chevron{
+background:url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%23cccccc' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E"), linear-gradient(90deg, #fff, transparent);
+background-blend-mode: lighten;
+background-repeat: round;
+}
+.text-video__background--linear-gradient-plain-dots{
+  background-blend-mode: lighten;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23555555' fill-opacity='0.29' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"),linear-gradient(90deg, #fff, #fff, transparent, transparent, transparent);
+}
+.text-video__background--linear-gradient-square-tiles{
+  // background-color: #f2f2f2;
+  background-image: url(/assets/graphics/transparent-square-tiles.png),linear-gradient(90deg, #fff, #fff, transparent, transparent );
+  // background-image: url(/assets/graphics/transparent-square-tiles.png),linear-gradient(90deg, #fff, #fff, transparent, transparent, transparent);
+  background-blend-mode: hard-light;
+  background-color: #efefef;
+}
+/* Mobile-landscape (and larger) */
+@media only screen and (min-width: 400px) {
+  .text-video_flex-container {
+    // flex-wrap: wrap;
+  }
+  .flex-contents,
+  .flex-contents-video-left,
+  .flex-contents-video-right {
+    order: 2;
+    // padding: 8px;
+  }
+  .video-flex-contents {
+    order: 1;
+    // padding: 8px;
+  }
+}
+
+/* Tablet-portrait (and larger) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Tablet-landscape (and larger) */
+@media only screen and (min-width: 922px) {
+  .text-video_flex-container {
+    flex-wrap: nowrap;
+  }
+  .flex-contents,
+  .flex-contents-video-left,
+  .flex-contents-video-right,
+  .video-flex-contents {
+    order: unset;
+  }
+  .text-video_flex-container {
+    display: flex;
+  }
+
+}
+
+/* Laptops (and larger) */
+@media only screen and (min-width: 1200px) {
+
+}

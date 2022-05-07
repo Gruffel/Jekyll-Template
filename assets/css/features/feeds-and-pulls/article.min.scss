@@ -1,0 +1,100 @@
+---
+---
+
+
+
+a.btn {
+  width: clamp(150px, 100%, 400px)!important;
+
+}
+h1{
+  padding:0;
+  font-size:clamp(1rem, 3vw, 1.85rem);
+}
+
+
+.fs-wrap-snippet{
+  width: clamp(125px, 100%, 571px);
+  text-align: left;
+}
+
+.fs-snippet-info{
+  padding: 10px;
+}
+
+#results section {
+    display:block;
+}
+
+#results section.authorsSection {
+  height: fit-content;
+  display: grid;
+
+  grid-template-columns: 1fr;
+  text-align: center;
+  grid-gap:1rem;
+}
+
+.articleAuthor {
+    background-color: #eee;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 1px 1px 6px #111;
+    width: 30%;
+    margin: 5px 10px;
+}
+
+p.authorName{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+a.btn {
+  margin: 8px;
+  color: #c00;
+  display: block;
+  font-size: 1rem;
+}
+
+p.fs-list-info{
+  margin: 0;
+  margin: 8px 0;
+}
+.fs-wrap-snippet {
+text-align: center!important;
+}
+.fs-portrait-wrap {
+    width: 100%!important;
+  }
+  #results h2{
+    text-align:center;
+  }
+  #results section.authorsSection {
+      justify-items: center;
+    }
+@media only screen and (min-width:400px) {
+  .fs-wrap-snippet {
+  text-align: unset!important;
+  }
+  .fs-portrait-wrap {
+      width: unset!important;
+    }
+}
+@media only screen and (min-width:1200px) {
+#results section.authorsSection {
+  grid-template-columns: 1fr 1fr;
+}
+#results h2{
+  text-align:left;
+}
+#results section.authorsSection {
+    justify-items: unset;
+  }
+a.btn {
+  margin: 8px auto 0 auto!important;
+}
+.fs-wrap-snippet{
+width: 100%;
+}
+}

@@ -1,0 +1,83 @@
+---
+---
+.video-text_flex-container {
+    // display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:wrap-reverse;
+}
+.flex-contents,
+.image-flex-contents {
+  width: 100%;
+  // width: -webkit-fill-available;
+  text-align: center;
+  /*padding: 0px 8px;*/
+}
+.flex-contents-text-left {
+  width: 100%;
+  // width: -webkit-fill-available;
+  text-align: left;
+  /*padding: 0px 8px;*/
+}
+.flex-contents-text-center{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.flex-contents-text-left p, .flex-contents-text-left h3{
+  margin: 10px 15px;
+}
+.flex-contents-text-right p, .flex-contents-text-right h3{
+  margin: 10px 15px;
+}
+.video-text__background--linear-gradient-white-chevron{
+background:url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%23cccccc' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E"), linear-gradient(90deg, transparent, #fff);
+background-blend-mode: lighten;
+background-repeat: round;
+}
+.video-text__background--linear-gradient-plain-dots{
+  background-blend-mode: lighten;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23555555' fill-opacity='0.29' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"),linear-gradient(90deg,transparent, transparent, transparent, #fff, #fff );
+}
+.video-text__background--linear-gradient-square-tiles{
+  // background-color: #f2f2f2;
+  background-image: url(/assets/graphics/transparent-square-tiles.png),linear-gradient(90deg,transparent, transparent, #fff, #fff );
+  background-blend-mode: hard-light;
+  background-color: #eee;
+}
+.flex-contents-text-right {
+  width: 100%;
+  // width: -webkit-fill-available;
+  text-align: right;
+  /*padding: 0px 8px;*/
+}
+
+/* Mobile-landscape (and larger) */
+@media only screen and (min-width: 400px) {
+  .video-text_flex-container {
+    // flex-wrap: wrap;
+  }
+  .flex-contents,
+  .flex-contents-text-left,
+  .flex-contents-text-right,
+  .image-flex-contents {
+    // padding: 8px;
+  }
+}
+/* Tablet-portrait (and larger) */
+@media only screen and (min-width: 768px) {
+}
+/* Tablet-landscape (and larger) */
+@media only screen and (min-width: 922px) {
+  .video-text_flex-container {
+      flex-wrap: nowrap;
+  }
+  .video-text_flex-container {
+      // display: flex;
+}
+}
+/* Laptops (and larger) */
+@media only screen and (min-width: 1200px) {
+
+}

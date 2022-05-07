@@ -1,0 +1,113 @@
+<style media="screen">
+  .activeNavigation{
+    display: block;
+  }
+  .inactiveNavigation{
+    display: none;
+  }
+  .menu-sub li a.no-link:hover{
+    color: inherit !important;
+  }
+  nav ul li{
+    list-style: none !important;
+  }
+  nav ul {
+    padding: 0;
+  }
+</style>
+
+<nav id="top-Navigation">
+
+</nav>
+
+<script type="text/javascript">
+  //*********************************************************************************
+  // THIS SCRIPT BUILDS AND ADJUSTS THE MEGAMENU/MEGAMENU MOBILE NAVIGATION
+  //*********************************************************************************
+
+  var currentBuildType = ""; // records current screentime
+  var navigationWrapper = document.getElementById("top-Navigation"); // the HTML element we will build the navigation in
+  var navigationData = {{site.data.navigation | jsonify}}; // the full navigation json file as in the data folder (including build type and link correction)
+  var nav = navigationData.nav; // just the nav array from the navigation json file (does not include build type/link correction)
+
+  {% assign nav = site.data.navigation.nav %}
+  {% assign buildLayout = site.data.navigation.navigationLayout %}
+
+  {% include structure/navigation/megaMenu/megaMenuBuilder.js %}
+  {% include structure/navigation/hamburger/hamburgerBuilder.js %}
+
+  function BuildNavigation(){ // initiates the process of building and sets the reload navigation on window size change
+    initiateBuild();
+    $(window).resize(function(){ // refreshes the navigation if resizing
+      initiateBuild();
+    });
+  }
+
+  //sets the build of the menu based on the size of the screen
+  function initiateBuild(){
+    var navLayout = navigationData.navigationLayout;
+    for (let i = 0; i < navLayout.length; i++) {
+      const element = navLayout[i];
+      if(parseInt(element.size) < $(window).width() ){
+        eval(`initiate${element.build}Build()`);
+        break;
+      }
+    }
+  }
+
+
+  //*********************************************************************************************S
+  //*******************************   ULITITY FUNCTIONS   ***************************************
+  //*********************************************************************************************
+  // converts a given string to a URL appropriate alterantive based on the special characters noted in the navigation.json
+  function convertStringToUrl(string){
+      if(typeof string != "string") return; //emergency ejects if the input is not a string
+
+      // loops through all replacement objects in navigation.json, replacing characters
+      var newString = string;
+      for (let i = 0; i < navigationData.characterReplacements.length; i++) {
+        const replacementObject = navigationData.characterReplacements[i];
+
+        newString = (string.search(replacementObject.find) != -1)
+          ? newString.replaceAll(replacementObject.find,replacementObject.replacement)
+          : newString;
+      }
+
+      return newString.toLowerCase();
+  }
+
+  // returns the full string if the bool is true, otherwise returns an empty string
+  function shouldBuildString(bool, string){return (bool)? string : "";}
+
+  // returns the full img tag using source sets according to our standards given the path of an imgX image
+  function buildImageHTML(imgX_path, alt){
+    var imgTag = `
+    <img srcset="${imgX_path}?w=250&ar=3:2&fit=crop&q=70&format=auto&exp=-2&sat=5,
+             ${imgX_path}?w=500&ar=3:2&fit=crop&q=85&format=auto&exp=-2&sat=5 2x,
+             ${imgX_path}?w=750&ar=3:2&fit=crop&q=95&format=auto&exp=-2&sat=5 3x"
+     src="${imgX_path}?w=500&ar=3:2&fit=crop&q=95&format=auto&exp=-2&sat=5" width="500px" height="333.33px" loading="lazy" decode="async" style="background-image:url('${imgX_path}?w=500&ar=3:2&fit=crop&auto=compress&format=auto&q=20&blur=70'); background-size: cover; width: 100%; max-width: 475px; height: auto;"
+     alt="${alt}">
+     `;
+
+    return imgTag;
+  }
+
+  // used to grab the data of a given top nav/section using the title of that section
+  function getNavFromTitle(title){
+    var _nav = nav.find(element => element.title == title);
+
+    if(_nav == undefined){
+      for (let i = 0; i < nav.length; i++) {
+        const topNavItem = nav[i];
+        if(topNavItem.children != undefined && topNavItem.children.length > 0){
+          var _nav = topNavItem.children.find(element => element.title == title);
+          if(_nav != undefined) break;
+        }
+      }
+    }
+
+    return _nav;
+  }
+
+  BuildNavigation();
+</script>

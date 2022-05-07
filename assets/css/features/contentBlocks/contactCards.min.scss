@@ -1,0 +1,52 @@
+---
+---
+.contact-cards__wrapper{
+  padding:2rem;
+}
+
+.contact-card {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+/* Mobile-landscape (and larger) */
+@media only screen and (min-width:400px) {
+
+}
+
+/* Tablet-portrait (and larger) */
+@media only screen and (min-width:768px) {
+  .contact-cards__wrapper {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    align-items: center;
+    grid-column-gap: 5%;
+  }
+  .contact-cards__wrapper h2 {
+    grid-column: 1 / span 2;
+  }
+  .contact-card {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 40% 55%;
+    grid-column-gap: 5%;
+    text-align: left;
+  }
+  .contact-card__image {
+    max-width: 100%;
+  }
+}
+
+/* Tablet-landscape (and larger) */
+@media only screen and (min-width:922px) {
+
+}
+
+/* Laptops (and larger) */
+@media only screen and (min-width:1200px) {
+  .contact-card {
+      grid-template-columns: 30% 65%;
+  }
+
+}

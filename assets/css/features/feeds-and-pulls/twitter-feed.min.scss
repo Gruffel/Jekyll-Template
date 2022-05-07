@@ -1,0 +1,147 @@
+---
+---
+/* .twitterFeed h2, .twitterFeed p:nth-child(3) {
+  display: none;
+} */
+
+/* .tweet-profile p:nth-child(3) {
+  display: block !important;
+  margin: 0;
+} */
+
+.twitterFeed {
+  padding: 2rem 0;
+}
+
+.tweet{
+  background: white;
+  padding: 1em;
+  border-radius: 10px;
+  margin: 1em;
+  box-shadow: 1px 1px 10px #dddddd;
+}
+
+
+.tweet-profile{
+  /* border-bottom: 1px solid #000; */
+  display: grid;
+  width: 100%;
+  flex-flow: wrap;
+  /* padding-bottom: 1em; */
+  align-items: center;
+  grid-template-columns: 50px auto;
+  grid-column-gap: 1em;
+}
+.tweet-profile time{
+padding: 0 .5rem;
+}
+.tweet-profile img {
+  max-width: 100% !important;
+  max-height: 400px;
+  text-align: center;
+  height: auto;
+  align-self: center;
+}
+.tweet-content{
+  text-align: center;
+}
+.tweet-content img{
+  margin: auto;
+  max-height: 400px;
+}
+.tweet-content p {
+    text-align: left;
+}
+.tweet-profile a{
+  color: #990000;
+  /* text-decoration: none; */
+  /* padding: 0 .5rem; */
+}
+.twitter-feedtitle {
+    grid-column: 1 / span 1;
+}
+.tweet-profiletitle h3{
+  margin:0!important;
+}
+.tweet-profiletitle p{
+margin:0;
+}
+.tweet-retweet{
+  padding: .75rem .75rem 0 .75rem;
+  grid-column: 1/span 2;
+  margin: 10px 0 00;
+  text-align: center;
+  font-size: 1.25rem;
+  border-top: 1px solid;
+
+  /* padding:.75rem 0 0 0;
+  grid-column: 1/span 2; */
+}
+
+.twitter-feedtitle h2 {
+  display: inline-block;
+  font-size: 2rem;
+}
+.twitter-feedtitle p {
+  display: inline-block;
+  font-size: 1.75rem;
+  font-size: 1rem;
+}
+
+.tweet-retweet a {
+  /* display: block; */
+  padding: 0;
+}
+
+
+article.tweet img {
+  max-width: 100%;
+}
+
+
+
+
+/* Mobile-landscape (and larger) */
+@media only screen and (min-width:400px) {
+
+}
+
+/* Tablet-portrait (and larger) */
+@media only screen and (min-width:768px) {
+  .twitterFeed {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 1fr;
+    justify-content: center;
+  }
+
+  article.tweet img {
+    max-width: 400px;
+    padding: 1%;
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+}
+
+/* Tablet-landscape (and larger) */
+@media only screen and (min-width:922px) {
+
+
+}
+
+/* Laptops (and larger) */
+@media only screen and (min-width:1200px) {
+  .twitterFeed {
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: minmax(50px, auto);
+  }
+  .twitter-feedtitle {
+      grid-column: 1 / span 2;
+  }
+/*
+  article.tweet:nth-child(4), article.tweet:nth-child(6) {
+    grid-column: 1/span 2;
+  } */
+}

@@ -1,0 +1,44 @@
+---
+---
+  .makeAGift-home-2 {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 1em;
+    min-height: 400px;
+    padding-right: 1em;
+  }
+
+  .makeAGift-text p {
+    margin-bottom: 2em;
+  }
+
+  .makeAGift-img {
+    background-image: url('{{site.make-a-gift_image}}?w=500&ar=3:2&fit=crop&format=auto&q=50&exp=-2&sat=5');
+    width: auto;
+    height: 100%;
+    background-position: 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  a.btn {
+    background-color: transparent;
+    font-family: ISUSemibold,"Myriad Pro",Helvetica,sans-serif;
+    border: 2px solid #CC0000;
+    padding: .5em;
+    font-size: 1.2em;
+    transition: 1s;
+    text-decoration: none;
+  }
+
+  .btn:hover, .btn:focus {
+    background-color: #CC0000;
+    color: #fff;
+    border: 2px solid #CC0000;
+    text-decoration: none;
+  }
+
+  .makeAGift-text {
+    align-self: center;
+  }
