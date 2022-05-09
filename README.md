@@ -31,10 +31,6 @@ This version was/is a redesign of the template, allowing for improvements in bra
 - [CKEditor - Starting Point of CMS](https://ckeditor.com/)
 - [Ken Wheeler's Slick Carousel](https://kenwheeler.github.io/slick/)
 
-### Management Tools
-- [Base Camp | for Jekyll Templates 1 - 1.7.5](https://basecamp.com/)
-- Microsoft Teams, Lists, Tasks | for Jekyll Templates 2 +
-
 ### Testing Tools
 - [Jaws](https://webaim.org/articles/jaws/)
 - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
