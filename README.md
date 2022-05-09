@@ -14,13 +14,8 @@ The soul purpose of this version was to quickly leave the depricated environment
 This version was/is a redesign of the template, allowing for improvements in branding, asthetics, and perfomance. We were able to create newer components that were needed and others were requested. (More time, and more detail)
 
 ## Some of the live websites using Jekyll Template 2.0.5:
-- [Department of English](https://english.illinoisstate.edu/)
 - [School of Communication](https://communication.illinoisstate.edu/)
-- [Department of Mathematics](https://math.illinoisstate.edu/)
 - [Department of Psychology](https://psychology.illinoisstate.edu/)
-- [Communication Sciences and Disorders](https://csd.illinoisstate.edu/)
-- [Department of Economics](https://economics.illinoisstate.edu/)
-- [School of Biological Sciences](https://biology.illinoisstate.edu/)
 - [Publications Unit](https://english.illinoisstate.edu/pubunit/)
 
 ## Larger Feats in the template:
