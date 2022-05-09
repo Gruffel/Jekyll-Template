@@ -40,7 +40,7 @@ This version was/is a redesign of the template, allowing for improvements in bra
 - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
 - Microsoft's [Accessibility Insights](https://accessibilityinsights.io/)
 - [Nu HTML Checker](https://validator.w3.org/nu/)
-- Chrome and Firefox Developer Tools
+- [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) and [Firefox Developer Tools](https://firefox-source-docs.mozilla.org/devtools-user/tools_toolbox/index.html)
 - Mobile Testing - [Responsively](https://responsively.app/)
 - Custom Automated Testing [Puppeteer](https://developers.google.com/web/tools/puppeteer) - This is newer for me but I enjoy it <3
 
