@@ -54,3 +54,4 @@ This version was/is a redesign of the template, allowing for improvements in bra
 - To stay upto date on tech [daily.dev](https://daily.dev/)
 - [CodePen](https://codepen.io/)
 
+If you would like to learn more here is [my portfolio website](https://turtonic.com).
