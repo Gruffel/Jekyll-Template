@@ -1,3 +1,4 @@
+Jekyll Template 2.1.1
 This copy is the most up to date version of my work with the Jekyll template. 
 It is near the end of completion but it is not yet finished.
 
