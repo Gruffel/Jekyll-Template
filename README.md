@@ -26,7 +26,7 @@ This version was/is a redesign of the template, allowing for improvements in bra
 ## Larger Feats in the template:
 - [Image Optimization](https://github.com/Gruffel/ImageCarousel)
 - [Modular Components](https://github.com/Gruffel/Modular-Components)
-- -Object Oriented Components-
+- ~Object Oriented Components~
 
 ## Tools
 ### Tools Used in/for Construction:
