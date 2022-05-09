@@ -5,7 +5,7 @@ This copy is the most up to date version of my work with the Jekyll template.
 It is near the end of completion but it is not yet finished.
 
 ## Background
-I am in charge of the design, creation, updates, maintance, and operation of the template CAS-IT (College of Arts and Sciences IT) uses for their websites. I oversee, manage and mentor interns, student workers, and graduate assistants in their learning, desgining, developing, and maintaining CAS-IT's websites. 
+I am in charge of the design, creation, updates, maintance, and operation of the template CAS-IT (College of Arts and Sciences IT) uses for their websites. I supervise and mentor interns and graduate assistants in their learning, development, and maintenance of CAST-IT websites. 
 
 Notes on template iterations and scopes:
 - **Jekyll Template 1.0 - 1.7.5**
