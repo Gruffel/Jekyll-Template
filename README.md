@@ -43,6 +43,7 @@ This version was/is a redesign of the template, allowing for improvements in bra
 ### Extra Tools:
 - I love this for my personal Tech Notes [Obsidian](https://obsidian.md/)
 - To stay upto date on tech [daily.dev](https://daily.dev/)
-- [CodePen](https://codepen.io/)
+- HTML CSS and basic JS sandbox[CodePen](https://codepen.io/)
+- A more robust development sandbox [CodeSandbox](https://codesandbox.io/?from-app=1)
 
 If you would like to learn more here is [my portfolio website](https://turtonic.com).
